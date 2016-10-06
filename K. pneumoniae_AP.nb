@@ -3,17 +3,17 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='Mathematica 10.4' *)
+(* CreatedBy='Mathematica 11.0' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     50732,       1267]
-NotebookOptionsPosition[     48326,       1187]
-NotebookOutlinePosition[     48690,       1203]
-CellTagsIndexPosition[     48647,       1200]
+NotebookDataLength[     45734,       1124]
+NotebookOptionsPosition[     43582,       1053]
+NotebookOutlinePosition[     43946,       1069]
+CellTagsIndexPosition[     43903,       1066]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -40,36 +40,55 @@ Cell[TextData[{
    3.683035172546686*^9}, {3.683287309412829*^9, 3.6832873106672077`*^9}, 
    3.6847127826127357`*^9}],
 
-Cell["\<\
-Objective: Whereas a clear correlation exists between consumption of \
+Cell[TextData[{
+ "Objective:",
+ StyleBox[" Whereas a clear correlation exists between consumption of \
 antibiotics and the evolution of resistance in microbial communities, the \
 effect of reduction of usage is less clear. To project the future frequency \
 of carbapenem resistance, based on yearly surveillance data and consumption \
 data. A population genetic model was adapted to retrospectively estimate the \
 relationship between evolutionary fitness of carbapenem resistance and \
-carbapenem consumption.\
-\>", "Text",
- CellChangeTimes->{{3.684755872446123*^9, 3.684755902782219*^9}}],
+carbapenem consumption.",
+  FontWeight->"Plain"]
+}], "WolframAlphaShort",
+ CellChangeTimes->{{3.683287531459428*^9, 3.68328782137551*^9}, {
+  3.68328787870195*^9, 3.683287937627846*^9}}],
 
-Cell["\<\
-Derivation: We fit the historical selection to consumption via a \
+Cell[TextData[{
+ "Derivation: ",
+ StyleBox["We fit the historical selection to consumption via a \
 deterministic, continuous-time haploid model of the frequency of resistance. \
 See, for reference: 1) Hartl, Daniel L., Andrew G. Clark, and Andrew G. \
 Clark. Principles of population genetics. Vol. 116. Sunderland: Sinauer \
-associates, 1997\[LongDash]base population genetic model; 2) Nielsen, K. M., \
-& Townsend, J. P. (2004). Monitoring and modeling horizontal gene transfer. \
-Nature biotechnology, 22(9), 1110-1114\[LongDash]relation of base model to \
-novel DNA such as antimicrobial resistance elements; and 3) Johnsen, P. J., \
-Townsend, J. P., B\[OSlash]hn, T., Simonsen, G. S., Sundsfjord, A., & \
-Nielsen, K. M. (2011). Retrospective evidence for a biological cost of \
-vancomycin resistance determinants in the absence of glycopeptide selective \
-pressures. Journal of antimicrobial chemotherapy, 66(3), 608-610 \
-\[LongDash]application of base model to project future vancomycin resistance \
-after ban of use.\
-\>", "Text",
- CellChangeTimes->{{3.684755912372621*^9, 3.684755942681704*^9}}],
-
-Cell[CellGroupData[{
+associates, 1997",
+  FontWeight->"Plain"],
+ StyleBox["\[LongDash]base population genetic model",
+  FontWeight->"Plain",
+  FontSlant->"Italic"],
+ StyleBox["; 2) Nielsen, K. M., & Townsend, J. P. (2004). Monitoring and \
+modeling horizontal gene transfer. Nature biotechnology, 22(9), 1110-1114",
+  FontWeight->"Plain"],
+ StyleBox["\[LongDash]relation of base model to novel DNA such as \
+antimicrobial resistance elements",
+  FontWeight->"Plain",
+  FontSlant->"Italic"],
+ StyleBox["; and 3) Johnsen, P. J., Townsend, J. P., B\[OSlash]hn, T., \
+Simonsen, G. S., Sundsfjord, A., & Nielsen, K. M. (2011). Retrospective \
+evidence for a biological cost of vancomycin resistance determinants in the \
+absence of glycopeptide selective pressures. Journal of antimicrobial \
+chemotherapy, 66(3), 608-610 \[LongDash]",
+  FontWeight->"Plain"],
+ StyleBox["application of base model to project future vancomycin resistance \
+after ban of use",
+  FontWeight->"Plain",
+  FontSlant->"Italic"],
+ StyleBox[".",
+  FontWeight->"Plain"]
+}], "WolframAlphaShort",
+ CellChangeTimes->{{3.68328801131289*^9, 3.683288095811304*^9}, {
+  3.6832882991763897`*^9, 3.6832883547127113`*^9}, {3.6832884127485647`*^9, 
+  3.683288449808461*^9}, {3.683288516186564*^9, 3.683288516516803*^9}, {
+  3.68328909124573*^9, 3.683289317678453*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -125,91 +144,6 @@ pressures. Journal of antimicrobial chemotherapy, 66(3), 608-610.",
    3.6842784076253023`*^9}, 3.684521334837637*^9, {3.684581585313509*^9, 
    3.68458159513621*^9}, 3.6845816560655518`*^9, {3.684712767807828*^9, 
    3.6847127829127283`*^9}}],
-
-Cell[BoxData[
- InterpretationBox[Cell[TextData[{
-   StyleBox[
-   "Note that the likelihood function used here will additionally be improved \
-from that used in the preliminary model above. Because surveillance is \
-conducted by sampling and testing for resistance, likelihood can be \
-quantified under better distributional assumptions, with greater accuracy and \
-precision. Instead of the observed frequencies of resistance (which are not \
-certain), likelihood can be calculated based on the observed cases of \
-resistant (",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain"],
-   StyleBox["UKresistance, ",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain",
-    FontSlant->"Italic"],
-   StyleBox["above) vs. non-resistant (",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain"],
-   StyleBox["UKisolates",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain",
-    FontSlant->"Italic"],
-   StyleBox[" \[Dash] ",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain"],
-   StyleBox["UKresistance",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain",
-    FontSlant->"Italic"],
-   StyleBox[
-   ", above) measured by surveillance\[LongDash]see for instance, Johnsen, P. \
-J., Townsend, J. P., B\[OSlash]hn, T., Simonsen, G. S., Sundsfjord, A., & \
-Nielsen, K. M. (2011). Retrospective evidence for a biological cost of \
-vancomycin resistance determinants in the absence of glycopeptide selective \
-pressures. Journal of antimicrobial chemotherapy, 66(3), 608-610.",
-    StripOnInput->False,
-    FontSize->12,
-    FontWeight->"Plain"]
-  }], "WolframAlphaShort",
-   CellChangeTimes->{{3.683289726057184*^9, 3.683289961266238*^9}, {
-    3.683290062090114*^9, 3.6832901235745173`*^9}, {3.683290162800928*^9, 
-    3.683290243023469*^9}, {3.683290380014368*^9, 3.6832903934151173`*^9}}],
-  TextCell[
-   Row[{
-     Style[
-     "Note that the likelihood function used here will additionally be \
-improved from that used in the preliminary model above. Because surveillance \
-is conducted by sampling and testing for resistance, likelihood can be \
-quantified under better distributional assumptions, with greater accuracy and \
-precision. Instead of the observed frequencies of resistance (which are not \
-certain), likelihood can be calculated based on the observed cases of \
-resistant (", FontSize -> 12, FontWeight -> "Plain"], 
-     Style[
-     "UKresistance, ", FontSize -> 12, FontWeight -> "Plain", FontSlant -> 
-      "Italic"], 
-     Style[
-     "above) vs. non-resistant (", FontSize -> 12, FontWeight -> "Plain"], 
-     Style[
-     "UKisolates", FontSize -> 12, FontWeight -> "Plain", FontSlant -> 
-      "Italic"], 
-     Style[" \[Dash] ", FontSize -> 12, FontWeight -> "Plain"], 
-     Style[
-     "UKresistance", FontSize -> 12, FontWeight -> "Plain", FontSlant -> 
-      "Italic"], 
-     Style[
-     ", above) measured by surveillance\[LongDash]see for instance, Johnsen, \
-P. J., Townsend, J. P., B\[OSlash]hn, T., Simonsen, G. S., Sundsfjord, A., & \
-Nielsen, K. M. (2011). Retrospective evidence for a biological cost of \
-vancomycin resistance determinants in the absence of glycopeptide selective \
-pressures. Journal of antimicrobial chemotherapy, 66(3), 608-610.", FontSize -> 
-      12, FontWeight -> "Plain"]}], "WolframAlphaShort", 
-   CellChangeTimes -> {{3.683289726057184*^9, 3.683289961266238*^9}, {
-    3.683290062090114*^9, 3.6832901235745173`*^9}, {3.683290162800928*^9, 
-    3.683290243023469*^9}, {3.683290380014368*^9, 
-    3.6832903934151173`*^9}}]]], "Output",
- CellChangeTimes->{3.684748707373191*^9}]
-}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.684276369550303*^9, 3.6842763706987057`*^9}}],
@@ -337,15 +271,11 @@ Cell[BoxData[
  CellChangeTimes->{{3.6833123864295473`*^9, 3.6833123921723623`*^9}, 
    3.683312535239305*^9, 3.684583880402137*^9, 3.6847126637765007`*^9}],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6847559756856823`*^9, 3.684755977380233*^9}}],
-
-Cell["\<\
-Number of resistant isolates recovered, each year 2005\[Dash]2014; Number of \
-isolates tested, each year 2005\[Dash]2014, estimated frequencies of \
-resistance, 2005\[Dash]2014.\
-\>", "Text",
- CellChangeTimes->{{3.684755955808798*^9, 3.6847559608177347`*^9}}],
+Cell[TextData[StyleBox["Number of resistant isolates recovered, each year \
+2005\[Dash]2014; Number of isolates tested, each year 2005\[Dash]2014, \
+estimated frequencies of resistance, 2005\[Dash]2014.",
+ FontWeight->"Bold"]], "WolframAlphaShort",
+ CellChangeTimes->{3.6833125416696196`*^9}],
 
 Cell[BoxData[
  RowBox[{Cell[TextData[StyleBox[
@@ -424,7 +354,7 @@ Cell[BoxData[{
   FontWeight->"Plain"], "\[IndentingNewLine]", 
  StyleBox[
   RowBox[{
-   RowBox[{"fc", "=", "0.001"}], ";"}],
+   RowBox[{"fc", "=", "0.01"}], ";"}],
   FontWeight->"Plain"], "\[IndentingNewLine]", 
  StyleBox[
   RowBox[{
@@ -463,26 +393,23 @@ Cell[BoxData[{
    3.6842751434955735`*^9}, 3.684514548120756*^9, {3.6847126637548494`*^9, 
    3.684712666740281*^9}, {3.684712756336339*^9, 3.6847128013586345`*^9}, {
    3.6847128666578245`*^9, 3.6847128667581215`*^9}, {3.6847149231923056`*^9, 
-   3.6847149246778936`*^9}},
+   3.6847149246778936`*^9}, 3.684755426160808*^9},
  TextJustification->1.],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.`", ",", "0.00001792114695340502`", ",", "0.00005944055944055944`", ",", 
-   "0.00006405693950177935`", ",", "0.00006081081081081081`", ",", 
-   "0.00007092198581560284`", ",", "0.00010801393728222996`", ",", 
-   "0.00013468013468013467`", ",", "0.00014617940199335548`", ",", 
-   "0.00015517241379310343`"}], "}"}]], "Output",
+  "0.`", ",", "0.00017921146953405023`", ",", "0.0005944055944055944`", ",", 
+   "0.0006405693950177934`", ",", "0.0006081081081081081`", ",", 
+   "0.0007092198581560284`", ",", "0.0010801393728222997`", ",", 
+   "0.0013468013468013469`", ",", "0.001461794019933555`", ",", 
+   "0.0015517241379310342`"}], "}"}]], "Output",
  CellChangeTimes->{
   3.684583955946458*^9, 3.6845854442724457`*^9, 3.68458745172114*^9, 
    3.684594338059119*^9, 3.6847110363378887`*^9, {3.6847128562725945`*^9, 
    3.6847128703187513`*^9}, 3.6847136424894447`*^9, 3.6847149274835205`*^9, 
-   3.6847487205138187`*^9, {3.6847487596046667`*^9, 3.6847487799842997`*^9}, 
-   3.684754261740727*^9, 3.684756010543929*^9}]
+   3.684747032194604*^9, 3.6847551424417667`*^9, 3.68475542923002*^9}]
 }, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -502,39 +429,6 @@ relative to non-resistant.  [Make them work]", "Text",
     3.684276385688826*^9}}]}]], "Input",
  CellChangeTimes->{
   3.6845818049499826`*^9, {3.684581846370564*^9, 3.6845818741796207`*^9}}],
-
-Cell[BoxData[
- RowBox[{"Model", " ", 
-  InterpretationBox[Cell[TextData[{
-    StyleBox["Definitions: ", "Text",
-     StripOnInput->False,
-     FontSize->12],
-    StyleBox[
-    "r is the frequency of resistance at time t, r0 is the initial frequency \
-of resistance, p is the proportion of carbapenems prescribed, and m is the \
-continuous time Malthusian selection coefficients for resistant K. pneumoniae \
-relative to non-resistant.  [Make them work]", "Text",
-     StripOnInput->False,
-     FontSize->12,
-     FontWeight->"Plain"]
-   }], "WolframAlphaShort",
-    CellChangeTimes->{{3.6842495100738378`*^9, 3.684249559065999*^9}, {
-     3.6842574951877213`*^9, 3.684257521641042*^9}, {3.6842763811833735`*^9, 
-     3.684276385688826*^9}}],
-   TextCell[
-    Row[{
-      Style["Definitions: ", "Text", FontSize -> 12], 
-      Style[
-      "r is the frequency of resistance at time t, r0 is the initial \
-frequency of resistance, p is the proportion of carbapenems prescribed, and m \
-is the continuous time Malthusian selection coefficients for resistant K. \
-pneumoniae relative to non-resistant.  [Make them work]", "Text", FontSize -> 
-       12, FontWeight -> "Plain"]}], "WolframAlphaShort", 
-    CellChangeTimes -> {{3.6842495100738378`*^9, 3.684249559065999*^9}, {
-     3.6842574951877213`*^9, 3.684257521641042*^9}, {3.6842763811833735`*^9, 
-     3.684276385688826*^9}}]]}]], "Output",
- CellChangeTimes->{3.684748720527856*^9}]
-}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -627,24 +521,27 @@ Cell[BoxData[
           RowBox[{"-", "1"}], "]"}], "]"}]}]}], "\[IndentingNewLine]", 
       "]"}]}], "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.6847117917271023`*^9, 3.6847117995168715`*^9}, {
-   3.6847118370781827`*^9, 3.6847119126375446`*^9}, {3.6847119453016634`*^9, 
-   3.684712029380983*^9}, {3.684712080680929*^9, 3.6847121829462233`*^9}, {
-   3.6847123173274937`*^9, 3.6847123226084642`*^9}, {3.6847162624709215`*^9, 
-   3.6847162853647017`*^9}, 3.684754266037208*^9}],
+  3.6847118370781827`*^9, 3.6847119126375446`*^9}, {3.6847119453016634`*^9, 
+  3.684712029380983*^9}, {3.684712080680929*^9, 3.6847121829462233`*^9}, {
+  3.6847123173274937`*^9, 3.6847123226084642`*^9}, {3.6847162624709215`*^9, 
+  3.6847162853647017`*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  StyleBox[
   RowBox[{"r", "[", 
-   RowBox[{"2", ",", "0.900494", ",", "1", ",", "0.8"}], "]"}],
+   RowBox[{"1", ",", "0.900494", ",", "1", ",", "0.9"}], "]"}],
   FontWeight->"Plain"]], "Input",
  CellChangeTimes->{
   3.684712219228715*^9, {3.684716145726966*^9, 3.6847161555997496`*^9}, 
-   3.6847162921545672`*^9, {3.684754284572249*^9, 3.6847542924473352`*^9}}],
+   3.6847162921545672`*^9}],
 
-Cell[BoxData["0.7999431945758354`"], "Output",
- CellChangeTimes->{3.684756026428936*^9}]
+Cell[BoxData["0.9`"], "Output",
+ CellChangeTimes->{{3.684712215126204*^9, 3.68471221972893*^9}, 
+   3.6847123260481644`*^9, 3.684712433191856*^9, 3.6847128818408675`*^9, 
+   3.6847149394223003`*^9, {3.6847161459271317`*^9, 3.6847161557310047`*^9}, {
+   3.684716289036539*^9, 3.684716294302305*^9}, 3.684747068590184*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -694,7 +591,7 @@ Cell[BoxData[{
              RowBox[{"j", "-", "1"}], ",", "a", ",", "d", ",", "r0"}], 
             "]"}]}], "]"}]}]}], ",", 
        RowBox[{"{", 
-        RowBox[{"j", ",", "3", ",", "10"}], "}"}]}], "]"}], "]"}]}], 
+        RowBox[{"j", ",", "2", ",", "10"}], "}"}]}], "]"}], "]"}]}], 
    "\[IndentingNewLine]"}],
   FontWeight->"Plain"], "\[IndentingNewLine]", 
  StyleBox[
@@ -743,15 +640,20 @@ Cell[BoxData[{
    3.684586634909132*^9}, {3.6845946014325323`*^9, 3.684594625686656*^9}, {
    3.6845960607569027`*^9, 3.6845960608050632`*^9}, 3.684712476380311*^9, {
    3.6847127676923895`*^9, 3.6847127825285845`*^9}, {3.684714190300474*^9, 
-   3.684714190300474*^9}}],
+   3.684714190300474*^9}, {3.684749323418475*^9, 3.684749328229782*^9}}],
 
 Cell[BoxData[
- RowBox[{"-", "26605.45068339663`"}]], "Output",
- CellChangeTimes->{3.684756041488617*^9}]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.684756030564341*^9, 3.684756037452478*^9}}]
+ RowBox[{"-", "26091.239019736553`"}]], "Output",
+ CellChangeTimes->{
+  3.6845845493384047`*^9, 3.6845849143136473`*^9, {3.684585314417674*^9, 
+   3.684585320748301*^9}, 3.684585460570068*^9, 3.684586635964539*^9, 
+   3.684587471540845*^9, {3.684594603004469*^9, 3.684594626430352*^9}, {
+   3.684596061712933*^9, 3.684596066414003*^9}, {3.6847124549705257`*^9, 
+   3.684712457001728*^9}, {3.6847128858968825`*^9, 3.6847128884862614`*^9}, 
+   3.6847135433613367`*^9, 3.6847142949610643`*^9, 3.6847149410231647`*^9, 
+   3.68474727116916*^9, 3.684749329245906*^9, 3.6847551612979097`*^9, 
+   3.684755217254561*^9, 3.684755436484995*^9}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -796,44 +698,22 @@ Cell[BoxData[{
            StyleBox["&&",
             FontWeight->"Plain"], 
            RowBox[{
-            StyleBox["0",
+            StyleBox["0.01",
              FontWeight->"Plain"], 
-            StyleBox["\[LessEqual]",
+            StyleBox["<",
              FontWeight->"Plain"], "a"}], "&&", 
            RowBox[{"0", "\[LessEqual]", "d"}]}], "}"}]}], "}"}], ",", 
        RowBox[{
         StyleBox["{",
          FontWeight->"Bold"], 
-        RowBox[{
-         RowBox[{
-          StyleBox["{",
-           FontWeight->"Bold"], 
-          StyleBox[
-           RowBox[{"a", ",", "0.09", ",", "0.11"}],
-           FontWeight->"Plain"], 
-          StyleBox["}",
-           FontWeight->"Plain"]}], 
-         StyleBox[",",
-          FontWeight->"Plain"], 
-         StyleBox[
-          RowBox[{"{", 
-           RowBox[{"d", ",", "0.49", ",", "0.51"}], "}"}],
-          FontWeight->"Plain"], 
-         StyleBox[",",
-          FontWeight->"Plain"], 
-         StyleBox[
-          RowBox[{"{", 
-           RowBox[{"r0", ",", "0.09", ",", "0.11"}], "}"}],
-          FontWeight->"Plain"]}], 
+        StyleBox[
+         RowBox[{"a", ",", "d", ",", "r0"}],
+         FontWeight->"Plain"], 
         StyleBox["}",
          FontWeight->"Plain"]}], 
        StyleBox[",",
         FontWeight->"Plain"], 
-       StyleBox["\[IndentingNewLine]",
-        FontWeight->"Plain"], 
-       RowBox[{"MaxIterations", "\[Rule]", "1000"}], ",", 
-       RowBox[{"Method", "\[Rule]", "\"\<NelderMead\>\""}]}], 
-      "\[IndentingNewLine]", 
+       RowBox[{"MaxIterations", "\[Rule]", "10000"}]}], "\[IndentingNewLine]", 
       RowBox[{"(*", 
        RowBox[{",", 
         RowBox[{"AccuracyGoal", "\[Rule]", "3"}], ",", 
@@ -844,14 +724,7 @@ Cell[BoxData[{
     StyleBox[";",
      FontWeight->"Plain"]}], 
    StyleBox["//",
-    FontWeight->"Plain"], "Timing"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", 
-   RowBox[{"{", 
-    RowBox[{
-    "Automatic", ",", "DifferentialEvolution", ",", "NelderMead", ",", 
-     "SimulatedAnnealing", ",", "RandomSearch", ",", 
-     "NonlinearInteriorPoint"}], "}"}], "*)"}], 
+    FontWeight->"Plain"], "Timing"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  StyleBox[
   RowBox[{"{", 
@@ -861,31 +734,36 @@ Cell[BoxData[{
    3.6847150978285046`*^9, 3.6847151006332607`*^9}, {3.6847163924922075`*^9, 
    3.684716464554061*^9}, {3.68471778751972*^9, 3.684717858753607*^9}, {
    3.6847181556483526`*^9, 3.684718164992643*^9}, {3.684718249603449*^9, 
-   3.6847182548225856`*^9}, 3.68474901068795*^9, {3.6847508595678062`*^9, 
-   3.684750871323802*^9}, {3.684750965274091*^9, 3.684751018606447*^9}, {
-   3.684751074014058*^9, 3.684751081550191*^9}, {3.684751123723503*^9, 
-   3.684751125315388*^9}, {3.684751178959073*^9, 3.6847511838658843`*^9}, {
-   3.684751416041897*^9, 3.6847514425400896`*^9}, 3.6847514760584345`*^9, {
-   3.684754592259658*^9, 3.6847545936509733`*^9}}],
+   3.6847182548225856`*^9}, 3.684747527131915*^9, {3.6847475917711687`*^9, 
+   3.684747592106347*^9}, 3.684747658155445*^9, {3.6847500893364477`*^9, 
+   3.68475009003792*^9}, 3.6847501822702637`*^9, {3.6847511185267677`*^9, 
+   3.6847511202625017`*^9}, {3.684751297470778*^9, 3.6847513041017513`*^9}, {
+   3.684751428189858*^9, 3.684751430699774*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"38.264`", ",", "Null"}], "}"}]], "Output",
- CellChangeTimes->{3.6847544055280533`*^9, 3.684754631055768*^9, 
-  3.684756151019918*^9}],
+  RowBox[{"38.336`", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.68474733965522*^9, 3.684747567437973*^9, 
+  3.6847476320027246`*^9, 3.684747697399459*^9, 3.684749372236356*^9, 
+  3.6847501286043463`*^9, 3.684750220796636*^9, 3.684751159211157*^9, 
+  3.6847513455007267`*^9, 3.684751468560854*^9, 3.6847552059060183`*^9, 
+  3.6847552606618834`*^9, 3.6847554777745247`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"-", "34.32742283277015`"}], ",", 
+   RowBox[{"-", "39.09891573180089`"}], ",", 
    RowBox[{"{", 
     RowBox[{
-     RowBox[{"a", "\[Rule]", "0.22005158489485116`"}], ",", 
-     RowBox[{"d", "\[Rule]", "0.41163979122478256`"}], ",", 
-     RowBox[{"r0", "\[Rule]", "0.0059215971417281256`"}]}], "}"}]}], 
+     RowBox[{"a", "\[Rule]", "0.010000000539798415`"}], ",", 
+     RowBox[{"d", "\[Rule]", "0.17294232399787715`"}], ",", 
+     RowBox[{"r0", "\[Rule]", "0.005537786311705029`"}]}], "}"}]}], 
   "}"}]], "Output",
- CellChangeTimes->{3.6847544055280533`*^9, 3.684754631055768*^9, 
-  3.684756151021071*^9}]
+ CellChangeTimes->{3.68474733965522*^9, 3.684747567437973*^9, 
+  3.6847476320027246`*^9, 3.684747697399459*^9, 3.684749372236356*^9, 
+  3.6847501286043463`*^9, 3.684750220796636*^9, 3.684751159211157*^9, 
+  3.6847513455007267`*^9, 3.684751468560854*^9, 3.6847552059060183`*^9, 
+  3.6847552606618834`*^9, 3.684755477775833*^9}]
 }, Open  ]],
 
 Cell["Plot over time ", "WolframAlphaShort",
@@ -895,148 +773,149 @@ Cell["Plot over time ", "WolframAlphaShort",
 Cell[BoxData[
  RowBox[{
   RowBox[{
-   RowBox[{"plotStuff", "[", 
-    RowBox[{"{", 
-     RowBox[{"fita_", ",", "fitd_", ",", "fitr0_"}], "}"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
+   RowBox[{
+    RowBox[{"plotStuff", "[", 
      RowBox[{"{", 
-      RowBox[{
-       StyleBox["years",
-        FontWeight->"Plain"], 
-       StyleBox[",",
-        FontWeight->"Plain"], 
-       StyleBox["res",
-        FontWeight->"Plain"], 
-       StyleBox[",",
-        FontWeight->"Plain"], 
-       StyleBox["time",
-        FontWeight->"Plain"], 
-       StyleBox[",",
-        FontWeight->"Plain"], 
-       StyleBox["modelFit",
-        FontWeight->"Plain"], ",", 
-       StyleBox["plot1",
-        FontWeight->"Plain"], ",", "plot2"}], "}"}], ",", 
-     StyleBox["\[IndentingNewLine]",
-      FontWeight->"Plain"], 
+      RowBox[{"fitr0_", ",", "fita_", ",", "fitd_"}], "}"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
      RowBox[{
-      RowBox[{
-       StyleBox["years",
-        FontWeight->"Plain"], 
-       StyleBox["=",
-        FontWeight->"Plain"], 
+      RowBox[{"{", 
        RowBox[{
-        StyleBox["Range",
+        StyleBox["years",
          FontWeight->"Plain"], 
-        StyleBox["[",
-         FontWeight->"Bold"], 
-        StyleBox[
-         RowBox[{"2005", ",", "2014"}],
+        StyleBox[",",
          FontWeight->"Plain"], 
-        StyleBox["]",
-         FontWeight->"Plain"]}]}], 
-      StyleBox[";",
-       FontWeight->"Plain"], "\[IndentingNewLine]", 
-      RowBox[{"res", 
-       StyleBox["=",
-        FontWeight->"Plain"], 
-       StyleBox[
-        RowBox[{"Transpose", "[", 
-         RowBox[{"{", 
-          RowBox[{"years", ",", "rData"}], "}"}], "]"}],
-        FontWeight->"Plain"]}], 
-      StyleBox[";",
-       FontWeight->"Plain"], "\[IndentingNewLine]", 
-      RowBox[{"time", "=", 
-       RowBox[{"Range", "[", 
-        RowBox[{"1", ",", "10"}], "]"}]}], ";", 
-      StyleBox["\[IndentingNewLine]",
-       FontWeight->"Plain"], 
-      StyleBox[
-       RowBox[{"modelFit", "=", 
-        RowBox[{"Table", "[", 
-         RowBox[{
-          RowBox[{"r", "[", 
-           RowBox[{"t", ",", "fita", ",", "fitd", ",", "fitr0"}], "]"}], ",", 
-          
-          RowBox[{"{", 
-           RowBox[{"t", ",", "time"}], "}"}]}], "]"}]}],
-       FontWeight->"Plain"], 
-      StyleBox[";",
-       FontWeight->"Plain"], 
-      StyleBox["\[IndentingNewLine]",
-       FontWeight->"Plain"], 
+        StyleBox["res",
+         FontWeight->"Plain"], 
+        StyleBox[",",
+         FontWeight->"Plain"], 
+        StyleBox["time",
+         FontWeight->"Plain"], 
+        StyleBox[",",
+         FontWeight->"Plain"], 
+        StyleBox["modelFit",
+         FontWeight->"Plain"], ",", 
+        StyleBox["plot1",
+         FontWeight->"Plain"], ",", "plot2"}], "}"}], ",", 
       StyleBox["\[IndentingNewLine]",
        FontWeight->"Plain"], 
       RowBox[{
-       StyleBox["plot1",
-        FontWeight->"Plain"], 
-       StyleBox["=",
-        FontWeight->"Plain"], 
        RowBox[{
-        StyleBox["ListLinePlot",
+        StyleBox["years",
          FontWeight->"Plain"], 
-        StyleBox["[",
+        StyleBox["=",
          FontWeight->"Plain"], 
         RowBox[{
+         StyleBox["Range",
+          FontWeight->"Plain"], 
+         StyleBox["[",
+          FontWeight->"Bold"], 
          StyleBox[
-          RowBox[{"Transpose", "[", 
+          RowBox[{"2005", ",", "2014"}],
+          FontWeight->"Plain"], 
+         StyleBox["]",
+          FontWeight->"Plain"]}]}], 
+       StyleBox[";",
+        FontWeight->"Plain"], "\[IndentingNewLine]", 
+       RowBox[{"res", 
+        StyleBox["=",
+         FontWeight->"Plain"], 
+        StyleBox[
+         RowBox[{"Transpose", "[", 
+          RowBox[{"{", 
+           RowBox[{"years", ",", "rData"}], "}"}], "]"}],
+         FontWeight->"Plain"]}], 
+       StyleBox[";",
+        FontWeight->"Plain"], "\[IndentingNewLine]", 
+       RowBox[{"time", "=", 
+        RowBox[{"Range", "[", 
+         RowBox[{"1", ",", "10"}], "]"}]}], ";", 
+       StyleBox["\[IndentingNewLine]",
+        FontWeight->"Plain"], 
+       StyleBox[
+        RowBox[{"modelFit", "=", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"r", "[", 
+            RowBox[{"t", ",", "fita", ",", "fitd", ",", "fitr0"}], "]"}], ",", 
            RowBox[{"{", 
-            RowBox[{"years", ",", "modelFit"}], "}"}], "]"}],
+            RowBox[{"t", ",", "time"}], "}"}]}], "]"}]}],
+        FontWeight->"Plain"], 
+       StyleBox[";",
+        FontWeight->"Plain"], 
+       StyleBox["\[IndentingNewLine]",
+        FontWeight->"Plain"], 
+       StyleBox["\[IndentingNewLine]",
+        FontWeight->"Plain"], 
+       RowBox[{
+        StyleBox["plot1",
+         FontWeight->"Plain"], 
+        StyleBox["=",
+         FontWeight->"Plain"], 
+        RowBox[{
+         StyleBox["ListLinePlot",
           FontWeight->"Plain"], 
-         StyleBox[",",
-          FontWeight->"Plain"], 
-         StyleBox[
-          RowBox[{"PlotStyle", "\[Rule]", " ", 
-           RowBox[{"{", "Black", "}"}]}],
-          FontWeight->"Plain"], 
-         StyleBox[",",
-          FontWeight->"Plain"], 
-         StyleBox[
-          RowBox[{"AxesLabel", "\[Rule]", 
-           RowBox[{"{", 
-            RowBox[{"\"\<Years\>\"", ",", "\"\<Resistance\>\""}], "}"}]}],
-          FontWeight->"Plain"], 
-         StyleBox[",",
+         StyleBox["[",
           FontWeight->"Plain"], 
          RowBox[{
-          StyleBox["PlotLabel",
+          StyleBox[
+           RowBox[{"Transpose", "[", 
+            RowBox[{"{", 
+             RowBox[{"years", ",", "modelFit"}], "}"}], "]"}],
            FontWeight->"Plain"], 
-          StyleBox["\[Rule]",
-           FontWeight->"Plain"], " ", "\"\<France\>\""}], ",", 
-         StyleBox[" ",
-          FontWeight->"Plain"], 
-         StyleBox[
-          RowBox[{"PlotRange", "\[Rule]", " ", "All"}],
-          FontWeight->"Plain"], ",", 
-         RowBox[{"ImageSize", "\[Rule]", "300"}]}], 
-        StyleBox["]",
-         FontWeight->"Plain"]}]}], 
-      StyleBox[";",
-       FontWeight->"Plain"], "\[IndentingNewLine]", 
-      StyleBox[
-       RowBox[{"plot2", "=", 
-        RowBox[{"ListPlot", "[", 
-         RowBox[{
-          RowBox[{"{", "res", "}"}], ",", " ", 
-          RowBox[{"PlotStyle", "\[Rule]", " ", 
-           RowBox[{"PointSize", "[", "Large", "]"}]}], ",", 
-          RowBox[{"PlotRange", "\[Rule]", " ", "All"}], ",", 
-          RowBox[{"ImageSize", "\[Rule]", "300"}]}], "]"}]}],
-       FontWeight->"Plain"], 
-      StyleBox[";",
-       FontWeight->"Plain"], 
-      StyleBox["\[IndentingNewLine]",
-       FontWeight->"Plain"], 
-      StyleBox[
+          StyleBox[",",
+           FontWeight->"Plain"], 
+          StyleBox[
+           RowBox[{"PlotStyle", "\[Rule]", " ", 
+            RowBox[{"{", "Black", "}"}]}],
+           FontWeight->"Plain"], 
+          StyleBox[",",
+           FontWeight->"Plain"], 
+          StyleBox[
+           RowBox[{"AxesLabel", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Years\>\"", ",", "\"\<Resistance Frequency\>\""}], 
+             "}"}]}],
+           FontWeight->"Plain"], 
+          StyleBox[",",
+           FontWeight->"Plain"], 
+          RowBox[{
+           StyleBox["PlotLabel",
+            FontWeight->"Plain"], 
+           StyleBox["\[Rule]",
+            FontWeight->"Plain"], " ", "\"\<France\>\""}], ",", 
+          StyleBox[" ",
+           FontWeight->"Plain"], 
+          StyleBox[
+           RowBox[{"PlotRange", "\[Rule]", " ", "All"}],
+           FontWeight->"Plain"]}], 
+         StyleBox["]",
+          FontWeight->"Plain"]}]}], 
+       StyleBox[";",
+        FontWeight->"Plain"], "\[IndentingNewLine]", 
+       StyleBox[
+        RowBox[{"plot2", "=", 
+         RowBox[{"ListPlot", "[", 
+          RowBox[{
+           RowBox[{"{", "res", "}"}], ",", " ", 
+           RowBox[{"PlotStyle", "\[Rule]", " ", 
+            RowBox[{"PointSize", "[", "Large", "]"}]}], ",", 
+           RowBox[{"PlotRange", "\[Rule]", " ", "All"}]}], "]"}]}],
+        FontWeight->"Plain"], 
+       StyleBox[";",
+        FontWeight->"Plain"], "\[IndentingNewLine]", 
        RowBox[{"{", 
-        RowBox[{"plot1", ",", "plot2"}], "}"}],
-       FontWeight->"Plain"]}]}], 
-    StyleBox["\[IndentingNewLine]",
-     FontWeight->"Plain"], 
-    StyleBox["]",
-     FontWeight->"Plain"]}]}], 
+        StyleBox[
+         RowBox[{"plot1", ",", "plot2"}],
+         FontWeight->"Plain"], 
+        StyleBox["}",
+         FontWeight->"Plain"]}]}]}], 
+     StyleBox["\[IndentingNewLine]",
+      FontWeight->"Plain"], 
+     StyleBox["]",
+      FontWeight->"Plain"]}]}], 
+   StyleBox[";",
+    FontWeight->"Plain"]}], 
   StyleBox["\[IndentingNewLine]",
    FontWeight->"Plain"]}]], "Input",
  CellChangeTimes->{
@@ -1068,12 +947,11 @@ Cell[BoxData[
    3.6847167887149315`*^9, {3.6847168600891523`*^9, 3.6847168920987167`*^9}, {
    3.6847169304033136`*^9, 3.684716930541354*^9}, {3.6847169735933204`*^9, 
    3.684716976511112*^9}, {3.6847170328245096`*^9, 3.6847170431363487`*^9}, {
-   3.6847174662464056`*^9, 3.6847174970463862`*^9}, 3.6847177477616653`*^9, 
-   3.684748853162888*^9, {3.6847488896139393`*^9, 3.6847488918537583`*^9}, {
-   3.684749308186734*^9, 3.684749312570588*^9}, {3.6847493616147327`*^9, 
-   3.6847493892978907`*^9}, {3.6847494225389194`*^9, 3.684749485611208*^9}, {
-   3.684750159890588*^9, 3.684750166800682*^9}, {3.6847515397903757`*^9, 
-   3.684751545841715*^9}}],
+   3.6847174662464056`*^9, 3.6847174970463862`*^9}, 3.6847177477616653`*^9, {
+   3.68474835849745*^9, 3.684748410905376*^9}, 3.684748881230706*^9, {
+   3.684748970046384*^9, 3.684748974278459*^9}, {3.684749054298522*^9, 
+   3.68474907346616*^9}, {3.6847496693128433`*^9, 3.684749725007719*^9}, {
+   3.684751731849313*^9, 3.684751737536583*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1081,55 +959,49 @@ Cell[BoxData[{
  RowBox[{"optParams", "=", 
   RowBox[{
    RowBox[{"{", 
-    RowBox[{"a", ",", "d", ",", "r0"}], "}"}], "/.", 
+    RowBox[{"r0", ",", "a", ",", "d"}], "}"}], "/.", 
    "params"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   StyleBox[
-    RowBox[{"{", 
-     RowBox[{"plot1", ",", "plot2"}], "}"}],
-    FontWeight->"Plain"], 
-   StyleBox["=",
-    FontWeight->"Plain"], 
+   RowBox[{"{", 
+    RowBox[{"plot1", ",", "plot2"}], "}"}], " ", "=", " ", 
    RowBox[{"plotStuff", "@", "optParams"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Show", "[", 
   RowBox[{
-   StyleBox[
-    RowBox[{"{", 
-     RowBox[{"plot1", ",", "plot2"}], "}"}],
-    FontWeight->"Plain"], 
-   StyleBox[",",
-    FontWeight->"Plain"], 
+   RowBox[{"{", 
+    RowBox[{"plot1", ",", "plot2"}], "}"}], ",", 
    RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.6847159394711432`*^9, 3.684715948675987*^9}, {
    3.6847171480536275`*^9, 3.6847172251903753`*^9}, {3.68471726874473*^9, 
    3.6847173107378674`*^9}, 3.6847177436970716`*^9, {3.6847180519097986`*^9, 
    3.6847180893989086`*^9}, {3.684718323328802*^9, 3.684718390940899*^9}, {
-   3.684749453884059*^9, 3.684749454009437*^9}, {3.6847501689064293`*^9, 
-   3.684750173433612*^9}, {3.684751528841665*^9, 3.684751549979269*^9}, 
-   3.6847544973868303`*^9, 3.6847561267458982`*^9}],
+   3.684748424977435*^9, 3.684748428647026*^9}, {3.684748953386421*^9, 
+   3.684748958377315*^9}, {3.684749555611946*^9, 3.684749589595068*^9}, {
+   3.684749738807086*^9, 3.684749784527699*^9}, 3.684749976870192*^9, {
+   3.684750301277006*^9, 3.684750311568431*^9}, {3.68475091079525*^9, 
+   3.68475092511448*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.22005158489485116`", ",", "0.41163979122478256`", ",", 
-   "0.0059215971417281256`"}], "}"}]], "Output",
+  "0.005537786311705029`", ",", "0.010000000539798415`", ",", 
+   "0.17294232399787715`"}], "}"}]], "Output",
  CellChangeTimes->{
-  3.684749390753197*^9, {3.68474942559424*^9, 3.684749487149153*^9}, {
-   3.684750174237426*^9, 3.684750182842805*^9}, 3.684750805713663*^9, {
-   3.6847510906586905`*^9, 3.684751091433979*^9}, {3.684751532619779*^9, 
-   3.68475155015014*^9}, 3.6847516435139136`*^9, 3.6847544981675043`*^9, {
-   3.6847560737729263`*^9, 3.684756082928383*^9}, 3.684756151121233*^9}],
+  3.684749590541072*^9, {3.684749751397484*^9, 3.684749787103993*^9}, 
+   3.684749977436232*^9, 3.684750170137429*^9, 3.684750227709977*^9, {
+   3.684750302077394*^9, 3.684750312172337*^9}, 3.684750926068774*^9, 
+   3.6847514189918222`*^9, 3.684751572760482*^9, 3.6847517451954947`*^9, 
+   3.6847552754600897`*^9, 3.684755664097445*^9}],
 
 Cell[BoxData[
  GraphicsBox[{{{}, {{}, {}, 
      {GrayLevel[0], PointSize[0.019444444444444445`], AbsoluteThickness[1.6], 
-      LineBox[{{2005., 0.0059215971417281256`}, {2006., 
-       0.00592159720703742}, {2007., 0.00592159727508262}, {2008., 
-       0.005921597236994091}, {2009., 0.005921597201855381}, {2010., 
-       0.005921597185646358}, {2011., 0.00592159717666078}, {2012., 
-       0.005921597151640069}, {2013., 0.005921597120454931}, {2014., 
-       0.005921597088478103}}]}}, {}, {}, {{}, {}}}, {{}, {{}, 
+      LineBox[{{2005., 0.005537786311705029}, {2006., 0.005537786335675851}, {
+       2007., 0.00553778635494272}, {2008., 0.005537786335576933}, {2009., 
+       0.005537786319018929}, {2010., 0.005537786305965656}, {2011., 
+       0.0055377862843802896`}, {2012., 0.0055377862569157485`}, {2013., 
+       0.005537786231533725}, {2014., 
+       0.005537786205946628}}]}}, {}, {}, {{}, {}}}, {{}, {{}, 
      {RGBColor[0.368417, 0.506779, 0.709798], PointSize[Large], 
       AbsoluteThickness[1.6], 
       PointBox[{{2005., 0.0013280212483399733`}, {2006., 0.}, {2007., 
@@ -1142,7 +1014,7 @@ Cell[BoxData[
   Axes->{True, True},
   AxesLabel->{
     FormBox["\"Years\"", TraditionalForm], 
-    FormBox["\"Resistance\"", TraditionalForm]},
+    FormBox["\"Resistance Frequency\"", TraditionalForm]},
   AxesOrigin->{2004.8593750000002`, 0},
   DisplayFunction->Identity,
   Frame->{{False, False}, {False, False}},
@@ -1152,7 +1024,6 @@ Cell[BoxData[
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
   ImagePadding->All,
-  ImageSize->300,
   Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
         (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
          Part[#, 1]], 
@@ -1172,17 +1043,12 @@ Cell[BoxData[
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{
-  3.684749390753197*^9, {3.68474942559424*^9, 3.684749487149153*^9}, {
-   3.684750174237426*^9, 3.684750182842805*^9}, 3.684750805713663*^9, {
-   3.6847510906586905`*^9, 3.684751091433979*^9}, {3.684751532619779*^9, 
-   3.68475155015014*^9}, 3.6847516435139136`*^9, 3.6847544981675043`*^9, {
-   3.6847560737729263`*^9, 3.684756082928383*^9}, 3.684756151211213*^9}]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.684751693369302*^9, 3.6847517334202943`*^9}, 
-   3.6847517672892523`*^9}]
+  3.684749590541072*^9, {3.684749751397484*^9, 3.684749787103993*^9}, 
+   3.684749977436232*^9, 3.684750170137429*^9, 3.684750227709977*^9, {
+   3.684750302077394*^9, 3.684750312172337*^9}, 3.684750926068774*^9, 
+   3.6847514189918222`*^9, 3.684751572760482*^9, 3.6847517451954947`*^9, 
+   3.6847552754600897`*^9, 3.6847556641220493`*^9}]
+}, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1920, 1176},
@@ -1204,70 +1070,61 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 145, 2, 34, "Input"],
 Cell[706, 24, 644, 16, 45, "Text"],
-Cell[1353, 42, 568, 9, 59, "Text"],
-Cell[1924, 53, 1082, 16, 105, "Text"],
+Cell[1353, 42, 673, 12, 55, "WolframAlphaShort"],
+Cell[2029, 56, 1630, 34, 95, "WolframAlphaShort"],
+Cell[3662, 92, 2225, 53, 160, "Input"],
+Cell[5890, 147, 94, 1, 34, "Input"],
 Cell[CellGroupData[{
-Cell[3031, 73, 2225, 53, 160, "Input"],
-Cell[5259, 128, 3622, 82, 105, "Output"]
+Cell[6009, 152, 419, 7, 32, "Item"],
+Cell[CellGroupData[{
+Cell[6453, 163, 498, 8, 26, "Subsubitem"],
+Cell[6954, 173, 526, 8, 26, "Subsubitem"]
 }, Open  ]],
-Cell[8896, 213, 94, 1, 34, "Input"],
+Cell[7495, 184, 440, 7, 32, "Item"],
 Cell[CellGroupData[{
-Cell[9015, 218, 419, 7, 32, "Item"],
-Cell[CellGroupData[{
-Cell[9459, 229, 498, 8, 26, "Subsubitem"],
-Cell[9960, 239, 526, 8, 26, "Subsubitem"]
-}, Open  ]],
-Cell[10501, 250, 440, 7, 32, "Item"],
-Cell[CellGroupData[{
-Cell[10966, 261, 479, 7, 26, "Subsubitem"],
-Cell[11448, 270, 557, 8, 26, "Subsubitem"],
-Cell[12008, 280, 658, 9, 26, "Subsubitem"],
-Cell[12669, 291, 771, 12, 26, "Subsubitem"],
-Cell[13443, 305, 747, 11, 26, "Subsubitem"]
+Cell[7960, 195, 479, 7, 26, "Subsubitem"],
+Cell[8442, 204, 557, 8, 26, "Subsubitem"],
+Cell[9002, 214, 658, 9, 26, "Subsubitem"],
+Cell[9663, 225, 771, 12, 26, "Subsubitem"],
+Cell[10437, 239, 747, 11, 26, "Subsubitem"]
 }, Open  ]]
 }, Open  ]],
-Cell[14217, 320, 94, 1, 34, "Input"],
-Cell[14314, 323, 229, 5, 38, "Input"],
-Cell[14546, 330, 289, 7, 40, "Input"],
-Cell[14838, 339, 94, 1, 34, InheritFromParent],
-Cell[14935, 342, 270, 5, 35, "Text"],
-Cell[15208, 349, 928, 15, 110, "Input"],
+Cell[11211, 254, 94, 1, 34, "Input"],
+Cell[11308, 257, 229, 5, 38, "Input"],
+Cell[11540, 264, 289, 7, 40, "Input"],
+Cell[11832, 273, 292, 4, 37, "WolframAlphaShort"],
+Cell[12127, 279, 928, 15, 110, "Input"],
 Cell[CellGroupData[{
-Cell[16161, 368, 3881, 98, 311, "Input"],
-Cell[20045, 468, 740, 13, 34, "Output"]
+Cell[13080, 298, 3902, 98, 311, "Input"],
+Cell[16985, 398, 676, 12, 34, "Output"]
+}, Open  ]],
+Cell[17676, 413, 790, 17, 62, "Input"],
+Cell[18469, 432, 3670, 94, 309, "Input"],
+Cell[CellGroupData[{
+Cell[22164, 530, 264, 7, 34, "Input"],
+Cell[22431, 539, 320, 4, 34, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20822, 486, 790, 17, 62, "Input"],
-Cell[21615, 505, 1435, 30, 59, "Output"]
-}, Open  ]],
-Cell[23065, 538, 3696, 94, 309, "Input"],
+Cell[22788, 548, 163, 2, 39, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[26786, 636, 312, 7, 34, "Input"],
-Cell[27101, 645, 88, 1, 34, "Output"]
+Cell[22976, 554, 4563, 88, 104, "Input"],
+Cell[27542, 644, 647, 10, 34, "Output"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27226, 651, 163, 2, 39, "Subsubsection"],
+Cell[28238, 660, 110, 1, 39, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[27414, 657, 4517, 88, 104, "Input"],
-Cell[31934, 747, 104, 2, 34, "Output"]
+Cell[28373, 665, 2638, 75, 111, "Input"],
+Cell[31014, 742, 411, 7, 34, "Output"],
+Cell[31428, 751, 654, 14, 34, "Output"]
 }, Open  ]],
-Cell[32053, 752, 92, 1, 34, InheritFromParent]
-}, Open  ]],
+Cell[32097, 768, 165, 2, 37, "WolframAlphaShort"],
+Cell[32265, 772, 7017, 181, 272, "Input"],
 Cell[CellGroupData[{
-Cell[32182, 758, 110, 1, 39, "Subsubsection"],
-Cell[CellGroupData[{
-Cell[32317, 763, 3679, 105, 180, "Input"],
-Cell[35999, 870, 173, 4, 34, "Output"],
-Cell[36175, 876, 418, 11, 34, "Output"]
-}, Open  ]],
-Cell[36608, 890, 165, 2, 37, "WolframAlphaShort"],
-Cell[36776, 894, 6979, 181, 278, "Input"],
-Cell[CellGroupData[{
-Cell[43780, 1079, 1152, 30, 83, "Input"],
-Cell[44935, 1111, 534, 10, 34, "Output"],
-Cell[45472, 1123, 2647, 55, 229, "Output"]
-}, Open  ]],
-Cell[48134, 1181, 176, 3, 81, "Input"]
+Cell[39307, 957, 1118, 24, 84, "Input"],
+Cell[40428, 983, 506, 10, 34, "Output"],
+Cell[40937, 995, 2617, 54, 254, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]

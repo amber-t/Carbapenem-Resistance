@@ -1,4 +1,6 @@
+clear all
 data = xlsread('DataSheet.xlsx','United States');
+data = data(:,6:end);
 global year p is res t
 year = data(1,:);
 p = data(2,:);
@@ -10,17 +12,17 @@ r0 = 0.4
 Re = 11
 Rn = 0.11
 Nn  = 0.0011
+init = [r0,Re,Rn,Nn];
 ARmodel(r0,Re,Rn,Nn)
-Likefun(r0,Re,Rn,Nn)
+
+Likefun(init)
 
 
+[fit,fvalue]= fminsearchbnd(@Likefun,init)
 
 
-
-
-
-
-
+bestfit = ARmodel(fit(1),fit(2),fit(3),fit(4))
+plot(year,res./is,'-bo',year,bestfit,'k','Linewidth',2)
 
 
 

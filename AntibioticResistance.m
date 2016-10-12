@@ -1,28 +1,38 @@
 clear all
 data = xlsread('DataSheet.xlsx','United States');
-data = data(:,6:end);
-global year p is res t
+%data = data(:,6:end);
+global year p is res t model
 year = data(1,:);
 p = data(2,:);
 is = data(3,:);
 res = round(data(4,:));
-t = length(data(1,:))-1
+t = length(data(1,:));
+
 
 r0 = 0.4
 Re = 11
 Rn = 0.11
 Nn  = 0.0011
-init = [r0,Re,Rn,Nn];
-ARmodel(r0,Re,Rn,Nn)
+init = {[r0,Re],[r0,Re],[r0,Re,Rn],[r0,Re,Rn,Nn]};
+% ARmodel(init)
+% Likefun(init)
 
-Likefun(init)
+modelset = 4;
+modelnames = {'Original','Model 1','Model 2','Model 3'}
+for model = modelset;
+[fit,fvalue]= fminsearchbnd(@Likefun,init{model})
+bestfit(model,:) = ARmodel(fit)
+clear fit fvalue
+end
+
+model = 1
+ARmodel([0.4,11])
 
 
-[fit,fvalue]= fminsearchbnd(@Likefun,init)
 
 
-bestfit = ARmodel(fit(1),fit(2),fit(3),fit(4))
-plot(year,res./is,'-bo',year,bestfit,'k','Linewidth',2)
+
+plot(year,res./is,'-bo',year,bestfit(4,:),'k','Linewidth',2)
 
 
 

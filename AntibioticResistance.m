@@ -69,19 +69,28 @@ Yp = 2012:1:2020;
 pathogens = {'Klebsiella pneumoniae','Pseudomonas aeruginosa', ...
              'Acinetobacter baumanni'}
 close all
+figure('units','normalized','outerposition',[0 0 1 1])
 for i = 1:3
     subplot(3,1,i)
-    plot(Yo,D(i,:),'ko',Yo,F(i,:),'b',Yp,SQ(i,:),'b-',Yp,I(i,:), ...
-         'm')
+    plot(Yo,D(i,:),'k.',Yo,F(i,:),'b',Yp,SQ(i,:),'b--',Yp,I(i,:), ...
+         'c','LineWidth',1.5,'MarkerSize',20)
     box('off')
-    title(pathogens(i));
+    title(pathogens(i),'FontSize',16,'FontWeight','Normal');
     if i == 1
-        legend('Resistance frequency','Model fit',['Status ' ...
-                            'Quo'],'Intervention')
+        h = legend('Resistance frequency','Model fit',['Status ' ...
+                            'Quo'],'Intervention','Location','northwest')
+        set(h,'FontSize',16)
         legend('boxoff')
-        legend('Position','northwest')
     end
 end
+[ax1,h1]=suplabel('Time (in years)');
+[ax2,h2]=suplabel('Frequency of carbapenem resistance','y');
+ % [ax3,h2]=suplabel('super Y label (right)','yy');
+[ax4,h3]=suplabel('United States'  ,'t');
+set(h1,'FontSize',20)
+set(h2,'FontSize',20)
+set(h3,'FontSize',30,'FontWeight','Normal')
+
 
 
 

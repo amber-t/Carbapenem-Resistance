@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     61179,       1700]
-NotebookOptionsPosition[     59779,       1654]
-NotebookOutlinePosition[     60215,       1671]
-CellTagsIndexPosition[     60172,       1668]
+NotebookDataLength[     61635,       1706]
+NotebookOptionsPosition[     60235,       1660]
+NotebookOutlinePosition[     60671,       1677]
+CellTagsIndexPosition[     60628,       1674]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -118,45 +118,38 @@ Cell[BoxData[{
     RowBox[{"Drop", "[", 
      RowBox[{
       RowBox[{"data", "[", 
-       RowBox[{"[", "3", "]"}], "]"}], ",", "1"}], "]"}]}], ";"}], 
+       RowBox[{"[", "2", "]"}], "]"}], ",", "1"}], "]"}]}], ";"}], 
   " "}], "\n", 
  RowBox[{
   RowBox[{"resistance", "=", 
    RowBox[{"Drop", "[", 
     RowBox[{
      RowBox[{"data", "[", 
-      RowBox[{"[", "4", "]"}], "]"}], ",", "1"}], "]"}]}], 
+      RowBox[{"[", "3", "]"}], "]"}], ",", "1"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"rfreq", "=", 
-    RowBox[{"resistance", "/", "isolates"}]}], ";"}], " ", 
-  RowBox[{"(*", 
-   RowBox[{"Resistance", " ", "frequency"}], "*)"}]}], "\[IndentingNewLine]", 
-
- RowBox[{
-  RowBox[{
+    RowBox[{"resistance", "/", "isolates"}]}], ";", " ", 
+   RowBox[{"(*", 
+    RowBox[{"Resistance", " ", "frequency"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{"cn", " ", "=", " ", 
     RowBox[{
      RowBox[{"Drop", "[", 
       RowBox[{
        RowBox[{"data", "[", 
-        RowBox[{"[", "5", "]"}], "]"}], ",", "1"}], "]"}], "/", "10000"}]}], 
-   ";"}], " ", 
-  RowBox[{"(*", "consumption", "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"pc", " ", "=", " ", "0.21"}], ";"}], " ", 
-  RowBox[{"(*", 
-   RowBox[{
-   "proportion", " ", "of", " ", "carbapanem", " ", "prescription", " ", 
-    "out", " ", "of", " ", "all", " ", "antibiotics", " ", "prescribed", " ", 
-    "for", " ", "bacterial", " ", "pneuomonia", " ", 
-    RowBox[{"NOTE", ":", " ", 
-     RowBox[{"Update", " ", "with", " ", "better", " ", 
-      RowBox[{"estimate", "."}]}]}]}], "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
+        RowBox[{"[", "8", "]"}], "]"}], ",", "1"}], "]"}], "/", "10000"}]}], 
+   ";", " ", 
+   RowBox[{"(*", "consumption", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"pc", " ", "=", " ", "0.21"}], ";", " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "proportion", " ", "of", " ", "carbapanem", " ", "prescription", " ", 
+     "out", " ", "of", " ", "all", " ", "antibiotics", " ", "prescribed", " ",
+      "for", " ", "bacterial", " ", "pneuomonia", " ", 
+     RowBox[{"NOTE", ":", " ", 
+      RowBox[{"Update", " ", "with", " ", "better", " ", 
+       RowBox[{"estimate", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{"tc", " ", "=", " ", 
     RowBox[{"cn", "/", "pc"}]}], ";"}], " ", 
   RowBox[{"(*", 
@@ -165,9 +158,11 @@ Cell[BoxData[{
     "bacterial", " ", 
     RowBox[{"pneumonia", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"p", "=", 
-    RowBox[{"cn", "/", "tc"}]}], ";"}], " ", 
+  RowBox[{"df", " ", "=", " ", 
+   RowBox[{"tc", "-", "cn"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p", "=", 
+   RowBox[{"cn", "/", "tc"}]}], ";", " ", 
   RowBox[{"(*", 
    RowBox[{
    "proportion", " ", "of", " ", "bacterial", " ", "pneumonia", " ", 
@@ -178,7 +173,8 @@ Cell[BoxData[{
    3.686400240606221*^9}, {3.686400852339789*^9, 3.68640085458731*^9}, {
    3.6864015941881104`*^9, 3.686401595661199*^9}, 3.6864017100127*^9, 
    3.686401756464123*^9, {3.686402989760213*^9, 3.686402993688077*^9}, {
-   3.686403192035913*^9, 3.686403223281679*^9}}]
+   3.686403192035913*^9, 3.686403223281679*^9}, {3.686671798414646*^9, 
+   3.6866718126376343`*^9}, {3.686671865753211*^9, 3.68667187137711*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -410,7 +406,12 @@ Cell[BoxData[{
             RowBox[{"cn", "[", 
              RowBox[{"[", 
               RowBox[{"1", ";;", "t"}], "]"}], "]"}], "]"}]}], "+", 
-          RowBox[{"b", "*", "t"}]}], ")"}]], " "}], 
+          RowBox[{"b", "*", 
+           RowBox[{"Total", "[", 
+            RowBox[{"df", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ";;", "t"}], "]"}], "]"}], "]"}]}]}], ")"}]], 
+       " "}], 
       RowBox[{
        RowBox[{"(", 
         RowBox[{"1", "/", "r0"}], ")"}], "-", "1", "+", 
@@ -422,7 +423,12 @@ Cell[BoxData[{
             RowBox[{"cn", "[", 
              RowBox[{"[", 
               RowBox[{"1", ";;", "t"}], "]"}], "]"}], "]"}]}], "+", 
-          RowBox[{"b", "*", "t"}]}], ")"}]], " "}]]}], " ", ";"}],
+          RowBox[{"b", "*", 
+           RowBox[{"Total", "[", 
+            RowBox[{"df", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ";;", "t"}], "]"}], "]"}], "]"}]}]}], ")"}]], 
+       " "}]]}], " ", ";"}],
    FontWeight->"Plain"], 
   StyleBox[" ",
    FontWeight->"Plain"], 
@@ -714,8 +720,7 @@ Cell[BoxData[{
     RowBox[{"*", 
      StyleBox[")",
       FontWeight->"Plain"]}]]}], 
-  StyleBox["\[IndentingNewLine]",
-   FontWeight->"Plain"]}], "\[IndentingNewLine]"}], "Input",
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.683030762976203*^9, 3.6830307646226077`*^9}, {
    3.683030892090124*^9, 3.6830309083188725`*^9}, {3.6830309721242533`*^9, 
    3.683030993984562*^9}, {3.6830311371186757`*^9, 3.6830311451555557`*^9}, {
@@ -772,7 +777,8 @@ Cell[BoxData[{
    3.686414369325341*^9, 3.686414388826579*^9}, {3.6864144199682903`*^9, 
    3.686414447742525*^9}, {3.686414613494096*^9, 3.686414779850452*^9}, {
    3.686414811798102*^9, 3.686414906928382*^9}, {3.686415062398457*^9, 
-   3.686415134968748*^9}, {3.686415560254722*^9, 3.686415665538151*^9}}],
+   3.686415134968748*^9}, {3.686415560254722*^9, 3.686415665538151*^9}, {
+   3.686671887034416*^9, 3.6866719099334517`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -1654,8 +1660,8 @@ Cell[BoxData[""], "Input"]
 },
 NotebookEventActions->{"WindowClose" :> FrontEndExecute[
     FrontEndToken["DeleteGeneratedCells"]]},
-WindowSize->{1855, 1176},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{1920, 1176},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1679,28 +1685,28 @@ Cell[1918, 50, 250, 5, 33, "Text"],
 Cell[2171, 57, 746, 19, 80, "Input"],
 Cell[2920, 78, 324, 4, 37, "Text"],
 Cell[3247, 84, 163, 4, 33, "Text"],
-Cell[3413, 90, 3022, 90, 240, "Input"]
+Cell[3413, 90, 3144, 86, 259, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6472, 185, 148, 2, 35, "Subsubsection"],
-Cell[6623, 189, 2057, 52, 170, "Text"],
-Cell[8683, 243, 17354, 531, 269, "Input"],
-Cell[26040, 776, 2347, 37, 51, "Input"],
-Cell[28390, 815, 1665, 36, 104, "Text"],
-Cell[30058, 853, 8193, 199, 111, "Input"]
+Cell[6594, 181, 148, 2, 35, "Subsubsection"],
+Cell[6745, 185, 2057, 52, 170, "Text"],
+Cell[8805, 239, 17688, 541, 269, "Input"],
+Cell[26496, 782, 2347, 37, 51, "Input"],
+Cell[28846, 821, 1665, 36, 104, "Text"],
+Cell[30514, 859, 8193, 199, 111, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38288, 1057, 104, 1, 35, "Subsubsection"],
-Cell[38395, 1060, 165, 3, 33, "Text"],
-Cell[38563, 1065, 7777, 242, 92, "Input"]
+Cell[38744, 1063, 104, 1, 35, "Subsubsection"],
+Cell[38851, 1066, 165, 3, 33, "Text"],
+Cell[39019, 1071, 7777, 242, 92, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[46377, 1312, 97, 1, 35, "Subsubsection"],
-Cell[46477, 1315, 203, 4, 33, "Text"],
-Cell[46683, 1321, 5370, 141, 226, "Input"],
-Cell[52056, 1464, 92, 1, 33, "Text"],
-Cell[52151, 1467, 7583, 182, 301, "Input"],
-Cell[59737, 1651, 26, 0, 30, "Input"]
+Cell[46833, 1318, 97, 1, 35, "Subsubsection"],
+Cell[46933, 1321, 203, 4, 33, "Text"],
+Cell[47139, 1327, 5370, 141, 226, "Input"],
+Cell[52512, 1470, 92, 1, 33, "Text"],
+Cell[52607, 1473, 7583, 182, 301, "Input"],
+Cell[60193, 1657, 26, 0, 30, "Input"]
 }, Open  ]]
 }
 ]

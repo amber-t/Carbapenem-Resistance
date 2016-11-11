@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     58759,       1479]
-NotebookOptionsPosition[     57128,       1426]
-NotebookOutlinePosition[     57594,       1444]
-CellTagsIndexPosition[     57551,       1441]
+NotebookDataLength[     63642,       1590]
+NotebookOptionsPosition[     61934,       1535]
+NotebookOutlinePosition[     62400,       1553]
+CellTagsIndexPosition[     62357,       1550]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -170,15 +170,17 @@ Cell[BoxData[{
     RowBox[{"data", "[", 
      RowBox[{"[", 
       RowBox[{
-       RowBox[{"-", "1"}], ",", "1"}], "]"}], "]"}]}], ";", " ", 
-   RowBox[{"(*", 
-    RowBox[{
-    "proportion", " ", "of", " ", "carbapanem", " ", "prescription", " ", 
-     "out", " ", "of", " ", "all", " ", "antibiotics", " ", "prescribed", " ",
-      "for", " ", "bacterial", " ", "pneuomonia", " ", 
-     RowBox[{"NOTE", ":", " ", 
-      RowBox[{"Update", " ", "with", " ", "better", " ", 
-       RowBox[{"estimate", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "1"}], ",", "1"}], "]"}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "proportion", " ", "of", " ", "carbapanem", " ", "prescription", " ", 
+    "out", " ", "of", " ", "all", " ", "antibiotics", " ", "prescribed", " ", 
+    "for", " ", "bacterial", " ", "pneuomonia", " ", 
+    RowBox[{"NOTE", ":", " ", 
+     RowBox[{"Update", " ", "with", " ", "better", " ", 
+      RowBox[{"estimate", "."}]}]}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
    RowBox[{"tc", " ", "=", " ", 
     RowBox[{"cardiv", "/", "pc"}]}], ";"}], " ", 
   RowBox[{"(*", 
@@ -188,7 +190,10 @@ Cell[BoxData[{
     RowBox[{"pneumonia", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"prop", " ", "=", " ", 
-   RowBox[{"cardiv", "/", "tc"}]}], ";"}], "\[IndentingNewLine]"}], "Input",
+   RowBox[{"cardiv", "/", "tc"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"diff", " ", "=", " ", 
+   RowBox[{"tc", "-", "cardiv"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.686422034696558*^9, 3.6864220688839083`*^9}, {
    3.686422244390477*^9, 3.686422257854924*^9}, {3.6864223170828114`*^9, 
    3.6864223431908817`*^9}, 3.6864948657783527`*^9, {3.686495706144705*^9, 
@@ -203,7 +208,13 @@ Cell[BoxData[{
    3.686506570268374*^9}, {3.686507885056096*^9, 3.686507925091408*^9}, 
    3.68650806648864*^9, {3.686508132562462*^9, 3.686508159468111*^9}, {
    3.6865082387863083`*^9, 3.686508289413818*^9}, {3.686593508533208*^9, 
-   3.686593578249978*^9}}]
+   3.686593578249978*^9}, {3.686670822461113*^9, 3.686670846265149*^9}, 
+   3.686671020176771*^9, {3.686671058093039*^9, 3.686671058348937*^9}, {
+   3.686671195039489*^9, 3.686671197287084*^9}, {3.686672205273057*^9, 
+   3.686672265615234*^9}, {3.686672313935074*^9, 3.686672315030695*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.686672236209947*^9, 3.686672237035005*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -250,21 +261,40 @@ after ban of use", "Text",
    RowBox[{
    "The", " ", "functional", " ", "form", " ", "of", " ", "the", " ", "model",
      " ", "is", " ", 
-    FractionBox[
-     SuperscriptBox[
-      StyleBox["e",
-       FontWeight->"Plain"], "m"], 
-     RowBox[{
-      FractionBox["1", 
-       SubscriptBox["r", "0"]], "-", "1", "+", 
-      SuperscriptBox["e", "m"]}]]}],
+    NamespaceBox["LinguisticAssistant",
+     DynamicModuleBox[{Typeset`query$$ = "e^m/(1/Subscript[r, 0] - 1 + e^m)", 
+      Typeset`boxes$$ = "None", Typeset`allassumptions$$ = {}, 
+      Typeset`assumptions$$ = {}, Typeset`open$$ = {1, 2}, 
+      Typeset`querystate$$ = {
+      "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+       1.549947`6.641861841342991, "Messages" -> {}}}, 
+      DynamicBox[ToBoxes[
+        AlphaIntegration`LinguisticAssistantBoxes[
+        "e^m/(1/Subscript[r, 0] - 1 + e^m)", 4, Automatic, 
+         Dynamic[Typeset`query$$], 
+         Dynamic[Typeset`boxes$$], 
+         Dynamic[Typeset`allassumptions$$], 
+         Dynamic[Typeset`assumptions$$], 
+         Dynamic[Typeset`open$$], 
+         Dynamic[Typeset`querystate$$]], StandardForm],
+       ImageSizeCache->{299., {8., 20.}},
+       TrackedSymbols:>{
+        Typeset`query$$, Typeset`boxes$$, Typeset`allassumptions$$, 
+         Typeset`assumptions$$, Typeset`open$$, Typeset`querystate$$}],
+      DynamicModuleValues:>{},
+      UndoTrackedVariables:>{Typeset`open$$}],
+     BaseStyle->{"Deploy"},
+     DeleteWithContents->True,
+     Editable->False,
+     SelectWithContents->True]}],
    FontWeight->"Bold"]], "Input",
   FontWeight->"Plain"],
  StyleBox["\n", "Text",
   FontWeight->"Plain"]
 }], "Text",
  CellChangeTimes->{{3.686400499649311*^9, 3.68640052600694*^9}, {
-  3.6864005718225193`*^9, 3.686400575021463*^9}}],
+  3.6864005718225193`*^9, 3.686400575021463*^9}, {3.68736386207417*^9, 
+  3.687363862074381*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -457,17 +487,41 @@ Cell[BoxData[
    3.686414811798102*^9, 3.686414906928382*^9}, {3.686415062398457*^9, 
    3.686415134968748*^9}, {3.686415560254722*^9, 3.686415665538151*^9}, {
    3.686418321121459*^9, 3.686418334972437*^9}, {3.686508624478046*^9, 
-   3.686508632277608*^9}, 3.68650871497578*^9}],
+   3.686508632277608*^9}, 3.68650871497578*^9, {3.6866710450891523`*^9, 
+   3.686671051229025*^9}, {3.6866716077238398`*^9, 3.6866716968985*^9}, {
+   3.686671727131069*^9, 3.6866717297824497`*^9}, {3.686672280091339*^9, 
+   3.68667229406674*^9}, {3.6869386960631742`*^9, 3.686938708012053*^9}}],
 
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   StyleBox["Maximum", "Subsubsection"], 
-   StyleBox[" ", "Subsubsection"], 
-   StyleBox["Likelihood", "Subsubsection"], 
-   StyleBox[" ", "Subsubsection"], 
-   StyleBox["Function", "Subsubsection"], 
-   StyleBox[" ", "Subsection"]}]}]], "Input",
+Cell[BoxData[{
+ NamespaceBox["LinguisticAssistant",
+  DynamicModuleBox[{Typeset`query$$ = "", Typeset`boxes$$ = "None", 
+   Typeset`allassumptions$$ = {}, Typeset`assumptions$$ = {}, 
+   Typeset`open$$ = {1}, Typeset`querystate$$ = {}}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`LinguisticAssistantBoxes["", 4, Automatic, 
+      Dynamic[Typeset`query$$], 
+      Dynamic[Typeset`boxes$$], 
+      Dynamic[Typeset`allassumptions$$], 
+      Dynamic[Typeset`assumptions$$], 
+      Dynamic[Typeset`open$$], 
+      Dynamic[Typeset`querystate$$]], StandardForm],
+    ImageSizeCache->{35., {8., 20.}},
+    TrackedSymbols:>{
+     Typeset`query$$, Typeset`boxes$$, Typeset`allassumptions$$, 
+      Typeset`assumptions$$, Typeset`open$$, Typeset`querystate$$}],
+   DynamicModuleValues:>{},
+   UndoTrackedVariables:>{Typeset`open$$}],
+  BaseStyle->{"Deploy"},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox["Maximum", "Subsubsection"], 
+  StyleBox[" ", "Subsubsection"], 
+  StyleBox["Likelihood", "Subsubsection"], 
+  StyleBox[" ", "Subsubsection"], 
+  StyleBox["Function", "Subsubsection"], 
+  StyleBox[" ", "Subsection"]}]}], "Input",
  CellChangeTimes->{{3.683030947375723*^9, 3.683030957812204*^9}, {
    3.683031003865847*^9, 3.683031046232802*^9}, {3.6830311098417034`*^9, 
    3.6830311611831536`*^9}, {3.6830312194008975`*^9, 
@@ -496,7 +550,7 @@ Cell[BoxData[
    3.683289384175683*^9}, {3.6832905325323877`*^9, 3.683290545859972*^9}, {
    3.6832923498581467`*^9, 3.683292380849185*^9}, {3.683292436814889*^9, 
    3.68329244020065*^9}, {3.683301607607415*^9, 3.683301649318082*^9}, 
-   3.683304140543382*^9, 3.683308159143393*^9}],
+   3.683304140543382*^9, 3.683308159143393*^9, 3.687363862453041*^9}],
 
 Cell[TextData[Cell[BoxData[Cell[TextData[{
   StyleBox["Note:",
@@ -669,6 +723,9 @@ Cell[BoxData[{
      RowBox[{"cn", " ", "=", " ", 
       RowBox[{"cardiv", "[", 
        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+     RowBox[{"df", " ", "=", 
+      RowBox[{"diff", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}], ",", 
      RowBox[{
       StyleBox[
        RowBox[{"{", 
@@ -714,7 +771,7 @@ Cell[BoxData[{
            StyleBox["<",
             FontWeight->"Plain"], " ", "1"}], ",", " ", 
           RowBox[{"a", "\[GreaterEqual]", " ", "0"}], ",", " ", 
-          RowBox[{"b", "\[LessEqual]", " ", "0"}]}], "}"}], ",", 
+          RowBox[{"b", "<", " ", "0"}]}], "}"}], ",", 
         RowBox[{"{", 
          StyleBox[
           RowBox[{"r0", ",", "a", ",", "b"}],
@@ -726,7 +783,7 @@ Cell[BoxData[{
         StyleBox[" ",
          FontWeight->"Plain"], 
         StyleBox[
-         RowBox[{"MaxIterations", "\[Rule]", "10000"}],
+         RowBox[{"MaxIterations", "\[Rule]", "100000"}],
          FontWeight->"Plain"]}], 
        StyleBox["]",
         FontWeight->"Plain"]}]}]}], "}"}]}], 
@@ -804,7 +861,16 @@ Cell[BoxData[{
    3.6865091486185513`*^9}, {3.686509191484441*^9, 3.686509199962942*^9}, {
    3.686509603749239*^9, 3.6865096145848503`*^9}, {3.686509661877747*^9, 
    3.68650971642094*^9}, {3.686510302686512*^9, 3.686510303674869*^9}, 
-   3.6865107206294937`*^9, {3.6865120278611526`*^9, 3.68651202902903*^9}}]
+   3.6865107206294937`*^9, {3.6865120278611526`*^9, 3.68651202902903*^9}, {
+   3.686668908318336*^9, 3.686668911853633*^9}, {3.68666906153791*^9, 
+   3.686669062633191*^9}, {3.686671104117733*^9, 3.6866711204006157`*^9}, {
+   3.686671231708642*^9, 3.686671232683566*^9}, {3.6866723319238377`*^9, 
+   3.686672348258445*^9}, {3.686938519269362*^9, 3.686938520420583*^9}, {
+   3.686938767464815*^9, 3.686938807690836*^9}, {3.686939133534691*^9, 
+   3.686939159882051*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.6866711231521606`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -873,6 +939,9 @@ Cell[BoxData[{
         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
       RowBox[{"cn", " ", "=", " ", 
        RowBox[{"cardiv", "[", 
+        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+      RowBox[{"df", " ", "=", 
+       RowBox[{"diff", "[", 
         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
       RowBox[{
        RowBox[{"x", "[", 
@@ -943,7 +1012,7 @@ Cell[BoxData[{
    3.686511686286436*^9}, 3.686512039853277*^9, {3.6865868610353813`*^9, 
    3.686586861883483*^9}, {3.686592896868075*^9, 3.6865929138798637`*^9}, 
    3.686593233682899*^9, {3.686593488437748*^9, 3.686593492277429*^9}, 
-   3.686593643209486*^9}],
+   3.686593643209486*^9, {3.686672399074642*^9, 3.686672399666*^9}}],
 
 Cell["Show plots", "Text",
  CellChangeTimes->{{3.686402657524583*^9, 3.686402683445462*^9}}],
@@ -1009,31 +1078,30 @@ Cell[BoxData[{
      RowBox[{"[", "1", "]"}], "]"}], ",", 
     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
     RowBox[{"PlotLabel", "\[Rule]", "\"\<United States (KP)\>\""}]}], "]"}], 
-  " ", ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Show", "[", 
-   RowBox[{
-    RowBox[{"plotD", "[", 
-     RowBox[{"[", "2", "]"}], "]"}], ",", 
-    RowBox[{"plotM", "[", 
-     RowBox[{"[", "2", "]"}], "]"}], ",", 
-    RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-    RowBox[{"PlotLabel", "\[Rule]", "\"\<United States (PA)\>\""}]}], "]"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Show", "[", 
-   RowBox[{
-    RowBox[{"plotD", "[", 
-     RowBox[{"[", "3", "]"}], "]"}], ",", 
-    RowBox[{"plotM", "[", 
-     RowBox[{"[", "3", "]"}], "]"}], ",", 
-    RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-    RowBox[{"PlotLabel", "\[Rule]", "\"\<United States (AB)\>\""}]}], "]"}], 
-  ";"}]}], "Input",
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"plotD", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], ",", 
+   RowBox[{"plotM", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<United States (PA)\>\""}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"plotD", "[", 
+    RowBox[{"[", "3", "]"}], "]"}], ",", 
+   RowBox[{"plotM", "[", 
+    RowBox[{"[", "3", "]"}], "]"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\"\<United States (AB)\>\""}]}], 
+  "]"}]}], "Input",
  CellChangeTimes->{{3.686512220743477*^9, 3.686512469694191*^9}, {
   3.686590470767819*^9, 3.686590514102783*^9}, {3.686590551602852*^9, 
   3.686590564735014*^9}, {3.6865906007631493`*^9, 3.686590628310752*^9}, {
-  3.6865916669518023`*^9, 3.686591668655192*^9}}]
+  3.6865916669518023`*^9, 3.686591668655192*^9}, {3.686672431295786*^9, 
+  3.6866724339498863`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1043,11 +1111,13 @@ Cell["Projections", "Subsubsection",
 
 Cell["\<\
 We project the impact of reduction in carbapenem consumption on the \
-antibiotic resistance frequencies in pathogens considered.\
+antibiotic resistance frequencies in pathogens considered.
+\
 \>", "Text",
  CellChangeTimes->{{3.6865809558597803`*^9, 3.686581068283208*^9}, {
-  3.686581248418756*^9, 3.6865812492826223`*^9}, {3.686581406122053*^9, 
-  3.686581423705621*^9}, {3.68658158065337*^9, 3.686581625833177*^9}}],
+   3.686581248418756*^9, 3.6865812492826223`*^9}, {3.686581406122053*^9, 
+   3.686581423705621*^9}, {3.68658158065337*^9, 3.686581625833177*^9}, 
+   3.686672745520751*^9}],
 
 Cell[BoxData[{
  RowBox[{
@@ -1084,41 +1154,58 @@ Cell[BoxData[{
    RowBox[{"Status", " ", "Quo", " ", "consumtions"}], 
    "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"projSQ", " ", "=", 
-   RowBox[{"ConstantArray", "[", 
-    RowBox[{"curcarb", ",", 
-     RowBox[{"Round", "[", "npy", "]"}]}], "]"}]}], ";", "  ", 
+  RowBox[{
+   RowBox[{"projSQ", " ", "=", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"curcarb", ",", 
+      RowBox[{"Round", "[", "npy", "]"}]}], "]"}]}], ";"}], "  ", 
   RowBox[{"(*", 
    RowBox[{
    "maintaining", " ", "current", " ", "carbapenem", " ", "consumption", " ", 
-    "levels"}], "*)"}], " ", "\[IndentingNewLine]", 
+    "levels"}], "*)"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"carbconSQ", " ", "=", " ", 
    RowBox[{"Join", "[", 
     RowBox[{"carbcons", ",", "projSQ"}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"cardivSQ", " ", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"carbconSQ", "*", 
+      RowBox[{"conbreak", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-   RowBox[{"cardivSQ", " ", "=", 
-    RowBox[{"Table", "[", 
-     RowBox[{
-      RowBox[{"carbconSQ", "*", 
-       RowBox[{"conbreak", "[", 
-        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
+   RowBox[{"tcSQ", " ", "=", " ", 
+    RowBox[{"cardivSQ", "/", "pc"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Total", " ", "antibiotics", " ", "prescribed", " ", "for", " ", 
+    "bacterial", " ", 
+    RowBox[{"pneumonia", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"diffSQ", " ", "=", " ", 
+    RowBox[{"tcSQ", "-", "cardivSQ"}]}], ";"}], "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"Intervention", " ", "consumtions"}], 
    "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"intv", " ", "=", " ", "0.01"}], ";", " ", 
+  RowBox[{
+   RowBox[{"intv", " ", "=", " ", "0.01"}], ";"}], " ", 
   RowBox[{"(*", 
    RowBox[{
    "reducing", " ", "current", " ", "carbapenem", " ", "consumption", " ", 
     "by", " ", 
     RowBox[{"(", 
      RowBox[{"1", "-", "intv"}], ")"}], " ", "%", " ", "in", " ", "next", " ",
-     "npy", " ", "years", " ", "linearly"}], "*)"}], "\[IndentingNewLine]", 
+     "npy", " ", "years", " ", "linearly"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"projI", " ", "=", " ", 
    RowBox[{"Range", "[", 
     RowBox[{"curcarb", ",", 
@@ -1135,16 +1222,28 @@ Cell[BoxData[{
    RowBox[{"Join", "[", 
     RowBox[{"carbcons", ",", "projI"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"cardivI", " ", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"carbconI", "*", 
+      RowBox[{"conbreak", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-   RowBox[{"cardivI", " ", "=", 
-    RowBox[{"Table", "[", 
-     RowBox[{
-      RowBox[{"carbconI", "*", 
-       RowBox[{"conbreak", "[", 
-        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
+   RowBox[{"tcI", " ", "=", " ", 
+    RowBox[{"cardivSQ", "/", "pc"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Total", " ", "antibiotics", " ", "prescribed", " ", "for", " ", 
+    "bacterial", " ", 
+    RowBox[{"pneumonia", "."}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"diffI", " ", "=", " ", 
+    RowBox[{"tcI", "-", "cardivI"}]}], ";"}], "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"Status", " ", "Quo", " ", "resistances"}], 
    "*)"}]}], "\[IndentingNewLine]", 
@@ -1178,6 +1277,9 @@ Cell[BoxData[{
         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
       RowBox[{"cn", " ", "=", " ", 
        RowBox[{"cardivSQ", "[", 
+        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+      RowBox[{"df", " ", "=", 
+       RowBox[{"diffSQ", "[", 
         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
       RowBox[{
        RowBox[{"y", "[", 
@@ -1243,6 +1345,9 @@ Cell[BoxData[{
       RowBox[{"cn", " ", "=", " ", 
        RowBox[{"cardivI", "[", 
         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
+      RowBox[{"df", " ", "=", 
+       RowBox[{"diffI", "[", 
+        RowBox[{"[", "i", "]"}], "]"}]}], ",", 
       RowBox[{
        RowBox[{"z", "[", 
         RowBox[{"[", "i", "]"}], "]"}], " ", "=", " ", 
@@ -1284,7 +1389,11 @@ Cell[BoxData[{
    3.6865878992781677`*^9, 3.6865878998146477`*^9}, {3.686589322005342*^9, 
    3.6865893558208017`*^9}, {3.686589428876717*^9, 3.686589428972386*^9}, {
    3.686591257393601*^9, 3.6865912810725813`*^9}, {3.686593662737206*^9, 
-   3.6865936659489594`*^9}}],
+   3.6865936659489594`*^9}, {3.6866700740147867`*^9, 3.686670117434482*^9}, {
+   3.68667253363557*^9, 3.6866725768898373`*^9}, {3.686672624241622*^9, 
+   3.686672700085044*^9}, {3.68667282285349*^9, 3.686672851705336*^9}, {
+   3.68667402398144*^9, 3.686674024156755*^9}, {3.686674156785902*^9, 
+   3.686674173992827*^9}, {3.686677981137723*^9, 3.686677981291198*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -1452,34 +1561,36 @@ Cell[1918, 50, 250, 5, 35, "Text"],
 Cell[2171, 57, 792, 19, 86, "Input"],
 Cell[2966, 78, 324, 4, 41, "Text"],
 Cell[3293, 84, 163, 4, 35, "Text"],
-Cell[3459, 90, 4361, 115, 391, "Input"]
+Cell[3459, 90, 4730, 123, 391, "Input"],
+Cell[8192, 215, 92, 1, 34, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7857, 210, 148, 2, 39, "Subsubsection"],
-Cell[8008, 214, 2057, 52, 186, "Text"],
-Cell[10068, 268, 7965, 191, 91, "Input"],
-Cell[18036, 461, 2347, 37, 60, "Input"],
-Cell[20386, 500, 1665, 36, 111, "Text"],
-Cell[22054, 538, 4470, 85, 58, "Input"]
+Cell[8321, 221, 148, 2, 39, "Subsubsection"],
+Cell[8472, 225, 3066, 71, 164, "Text"],
+Cell[11541, 298, 8212, 194, 91, "Input"],
+Cell[19756, 494, 3265, 58, 72, "Input"],
+Cell[23024, 554, 1665, 36, 111, "Text"],
+Cell[24692, 592, 4470, 85, 58, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[26561, 628, 104, 1, 39, "Subsubsection"],
-Cell[26668, 631, 165, 3, 35, "Text"],
-Cell[26836, 636, 7003, 170, 225, "Input"]
+Cell[29199, 682, 104, 1, 39, "Subsubsection"],
+Cell[29306, 685, 165, 3, 35, "Text"],
+Cell[29474, 690, 7493, 179, 225, "Input"],
+Cell[36970, 871, 70, 1, 34, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33876, 811, 97, 1, 39, "Subsubsection"],
-Cell[33976, 814, 203, 4, 35, "Text"],
-Cell[34182, 820, 5468, 125, 182, "Input"],
-Cell[39653, 947, 92, 1, 35, "Text"],
-Cell[39748, 950, 2011, 49, 107, "Input"],
-Cell[41762, 1001, 1313, 34, 84, "Input"]
+Cell[37077, 877, 97, 1, 39, "Subsubsection"],
+Cell[37177, 880, 203, 4, 35, "Text"],
+Cell[37383, 886, 5619, 128, 182, "Input"],
+Cell[43005, 1016, 92, 1, 35, "Text"],
+Cell[43100, 1019, 2011, 49, 107, "Input"],
+Cell[45114, 1070, 1309, 33, 84, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[43112, 1040, 104, 1, 39, "Subsubsection"],
-Cell[43219, 1043, 365, 6, 35, "Text"],
-Cell[43587, 1051, 8115, 235, 630, "Input"],
-Cell[51705, 1288, 5407, 135, 265, "Input"]
+Cell[46460, 1108, 104, 1, 39, "Subsubsection"],
+Cell[46567, 1111, 394, 8, 59, "Text"],
+Cell[46964, 1121, 9544, 274, 722, "Input"],
+Cell[56511, 1397, 5407, 135, 265, "Input"]
 }, Open  ]]
 }
 ]

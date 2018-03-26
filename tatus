@@ -1,0 +1,749 @@
+[33mcommit 29f3b5250584a0113eb6dfbe5992323c63c5f658[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Mar 23 22:25:14 2018 -0700
+
+    changes to model and plots
+
+[33mcommit f629daa356a89ca90c43c8eb042a7c4380777820[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Mar 13 20:18:58 2018 -0700
+
+    working on plots and uncertainty
+
+[33mcommit b6e6bebc44d176d8153e3ac20fc8062b45f8e111[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Mar 5 14:03:22 2018 -0500
+
+    pushing before further changing model in case need to revert to previous model
+
+[33mcommit db91ad149909fd63b4cc387714aabc0e683a30cb[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Feb 5 17:16:53 2018 -0500
+
+    2_5 fixes to model and start of econ framework
+
+[33mcommit fef363afb5141ca2a4ae473688a23812544f73d7[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Feb 5 13:09:40 2018 -0500
+
+    new model 1_29
+
+[33mcommit f56005314ec4c7543e4f99998acfaa535e904674[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Jan 22 15:33:53 2018 -0500
+
+    incorporated mortality
+    
+    incorporated changes in mortality parameters to spreadsheets + models
+
+[33mcommit 5ea2bdaa4d68d9e45637b10b84eb5b8ef3f73f80[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Jan 18 17:49:32 2018 -0500
+
+    one more change 1.18
+
+[33mcommit 7c6010d725013b287b9fad78a297b49d79077a3d[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Jan 18 17:48:47 2018 -0500
+
+    changes to plot formating
+
+[33mcommit 9ceccef8279ade0e911c1064a6639631454a0f8e[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Jan 18 16:33:51 2018 -0500
+
+    new model
+
+[33mcommit f6007cb366ade1c977baa55eea884be1ac2afc0f[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Dec 12 16:40:05 2017 -0500
+
+    changes
+    
+    changes 12.12
+
+[33mcommit 0a0e8fdac9b6db3671f2244162d6716a697de57d[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Dec 4 17:18:38 2017 -0500
+
+    changes 12/4/2017
+
+[33mcommit fca152e574d8512ba30c7f4367376992b3c65f47[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Dec 4 17:17:18 2017 -0500
+
+    changes 12.4
+
+[33mcommit 01d05c85c8fa7ed0b33311967a6a3b21464e3510[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Nov 27 12:46:43 2017 -0500
+
+    model with ATLAS + Merck data
+
+[33mcommit 4484a46c4b2920d2e371709520843de8c5fafc53[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Nov 6 11:32:57 2017 -0500
+
+    new ATLAS model
+
+[33mcommit 407e92d815bd998d9dc6f3ad6bffa8d4f390193a[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Nov 2 16:05:24 2017 -0400
+
+    Amber's branch changes
+    
+    changes + exponential smoothing
+
+[33mcommit f98994837ac406545c61f6cc8b53f0051873ad23[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Oct 2 13:49:32 2017 -0400
+
+    new files and changes
+
+[33mcommit 6bd2e736f2d6c64567859bf0fa194d1ac43474e2[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Sep 11 14:13:34 2017 -0400
+
+    amber's changes
+    
+    LOS plots added
+
+[33mcommit c4f4e9e7e0884f915df3d73b7b2feebc7c4746a2[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Sep 5 17:10:51 2017 -0400
+
+    added switch year plots
+
+[33mcommit 4e0fc2db22c1adce04f31e7e2073fdb68002f12d[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Sun Sep 3 15:38:50 2017 -0400
+
+    yearly mortality plots and changes in code
+
+[33mcommit 438930dd8d8a1aaa097ac5d211c86d3eec36fd49[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Aug 31 15:28:35 2017 -0400
+
+    no significant changes, but just want everything to be synced!
+
+[33mcommit 813e43b859031f444c51611856923a9b766d432e[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Jul 27 17:48:45 2017 +0800
+
+    new plots
+    
+    new plots that Jeff wanted tacked on to the end- had to mess with the
+    code in the beginning a bit, but should otherwise be unchanged :)
+
+[33mcommit 76fbc2079894ad2eb2511e50662b402be1d8273f[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu May 25 15:39:05 2017 -0700
+
+    new parameter sheet
+
+[33mcommit 22aadab96877d52ce7e674bff4e139849b50278f[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri May 19 17:36:42 2017 -0400
+
+    changes to code
+
+[33mcommit 8d71f3eddbbda161c5c767317731fae1c4ff5f34[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri May 19 11:37:29 2017 -0400
+
+    new updates
+
+[33mcommit 05d72146e922f79ed840342c29464c83b1ff75b1[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Wed May 17 16:24:14 2017 -0400
+
+    added more cost framework and made a few changes on datasheets
+
+[33mcommit 75e51ad01cd9ddc00d73e377ee37c6055c5680e4[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue May 16 16:35:05 2017 -0400
+
+    Automated interventions in code and added initial plots + framework for cost analysis
+
+[33mcommit 662ecb307d129f433b4b0f6e3b79e5e9b9011a67[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri May 12 16:50:32 2017 -0400
+
+    changed parameter names and cleaned code and other changes
+
+[33mcommit 99c6954f08fb08745616201778c4a2e9a982cf46[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue May 9 12:26:43 2017 -0400
+
+    sorry forgot to include this
+
+[33mcommit b46f2b610b758b83b1a0c1b4ef795c1d2705d16b[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue May 9 12:24:59 2017 -0400
+
+    New parameter sheet with costs
+
+[33mcommit af9b0fdb1da979e2c5b105b2d0efd2197a6e3df0[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon May 8 13:48:37 2017 -0400
+
+    added new DDD and pneumonia data
+
+[33mcommit 407f322ff3422466a3a11d668979946d1a74395e[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed May 3 13:45:21 2017 -0400
+
+    Small changes
+
+[33mcommit 1381daf27cf25922a73cd184236d10aa17a7d418[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon May 1 16:37:23 2017 -0400
+
+    Ambers model
+
+[33mcommit 1e43c8168ff0e3139ab6469bca47f29f3c6efac1[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Mon May 1 16:08:06 2017 -0400
+
+    Uncertainitity analysis file updated
+
+[33mcommit 6f7255cfd18b904660f96663f1503ed10a53f929[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon May 1 03:04:07 2017 -0400
+
+    updated files
+    
+    updates
+
+[33mcommit 60a49002c626b2ff28beaa706b0e2b769b052116[m
+Merge: 65e37a3 0d7210d
+Author: amber-t <amber.tang@yale.edu>
+Date:   Sun Apr 30 21:42:12 2017 -0400
+
+    Merge branch 'master' of https://github.com/amber-t/Carbapenem-Resistance
+
+[33mcommit 65e37a3e33f2f3515dfa09745bd47381b27a6dd5[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Sun Apr 30 21:38:34 2017 -0400
+
+    parameter file
+    
+    parameter datasheet
+
+[33mcommit 0d7210d6977fc18dae336cec357bd933bdeba127[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Sat Apr 29 11:02:41 2017 -0400
+
+    Combine figures of all pathogens and save
+
+[33mcommit fbbee869b6ee310d4be2db8ae71e614ce931fe1e[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Fri Apr 28 19:31:20 2017 -0400
+
+    Cleaned the code
+
+[33mcommit 72930b6f8a7b1a2d3c0fd2fc5f1368bb40d0579a[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Fri Apr 28 18:25:15 2017 -0400
+
+    Finally
+
+[33mcommit 391056bc12597ff212f0ebffc66c9e0f77cc1a64[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Fri Apr 28 17:19:53 2017 -0400
+
+    Pretty plots
+
+[33mcommit c99b6062494bccb97cfe58b82db30b3eb88044b3[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Apr 27 19:09:56 2017 -0400
+
+    Uncertainity in projection results
+
+[33mcommit d85188d4cf09d18e7aa95e8355f246019189c959[m
+Author: Eric Foster <ericmfoster88@gmail.com>
+Date:   Thu Apr 27 12:27:36 2017 -0400
+
+    Fix lines
+
+[33mcommit 40098a117b115c28346e812e21a1f1f7acbf3fad[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Apr 27 12:23:59 2017 -0400
+
+    Generalize the code
+
+[33mcommit 43cd6abb997151d7727133213f9bd192352a86e2[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Apr 26 18:10:00 2017 -0400
+
+    Add Uncertainity-Analysis file to plot confidence intervals
+
+[33mcommit 493878ecbb91c75b54f62eaebff897e64ca5e864[m
+Merge: 07db803 c8822ff
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Apr 20 11:49:57 2017 -0400
+
+    Merge with Amber's change
+
+[33mcommit c8822ffc753326b66cb6c18b84b77c48c26ca807[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Apr 20 11:39:54 2017 -0400
+
+    Add data
+
+[33mcommit 07db8037fb0b2dc0dcf40ab36b5c12967a8b7e97[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Apr 19 17:23:55 2017 -0400
+
+    Added some script for 3D plot
+
+[33mcommit 978391542379d7d209f2aa9e42fb40b28c073451[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Apr 19 14:01:08 2017 -0400
+
+    Fix projection part of the code
+
+[33mcommit ebd5b7dad526b6c54d3c1b18eb2637e39154dd40[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Apr 18 17:26:06 2017 -0400
+
+    updated code
+    
+    updated
+
+[33mcommit 1bf4606295e596850efa7a522fe16f3f3a8a3a03[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Apr 17 10:59:15 2017 -0400
+
+    added data
+    
+    updated 2 years of data, added enterobacter
+
+[33mcommit 1038923c79e58e409b451e40fdf92610be080e8c[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Apr 7 16:58:50 2017 -0400
+
+    cleaned the model
+    
+    renamed CBP Resistance Model (last model we agreed upon with Jeff) and
+    fixed the formatting of the headings, subheadings, etc.
+
+[33mcommit 30c40a0a018496f76a410b65066025ac7b8a6a26[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Mar 31 16:41:47 2017 -0400
+
+    updated model
+    
+    updated model
+
+[33mcommit ed0152083500a0fe32b0bce3e96de90ea5495e1f[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Mar 9 16:20:47 2017 -0500
+
+    Made a separate file KP-AP with kappa
+
+[33mcommit 62e373bf9a76ffc31daefc0c5b05bcebf610283c[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Feb 23 14:26:37 2017 -0500
+
+    new files
+    
+    new code
+
+[33mcommit 36838e39938857b7a91ca0cb9e192acb6b2f261e[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Dec 14 13:55:21 2016 -0500
+
+    Just in case the stupid thing did not work
+
+[33mcommit 55f0962c1a992b6ef67082e415deff4680a46f45[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Dec 14 13:54:17 2016 -0500
+
+    Merge changes of AB, EF and AT together
+
+[33mcommit ff4d3edd2d22558f134a0b749bbb376df3058812[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Dec 14 12:35:47 2016 -0500
+
+    Modify model
+
+[33mcommit 18c66f678d7f5b3be3982c275a242668a497fb8e[m
+Author: Eric Foster <ericmfoster88@gmail.com>
+Date:   Tue Dec 13 15:46:31 2016 -0500
+
+    made plot warnings go away
+
+[33mcommit 81c326006c26f1d06b5d9a7480b0e25a230448fa[m
+Author: Eric Foster <ericmfoster88@gmail.com>
+Date:   Tue Dec 13 15:40:46 2016 -0500
+
+    added interventions
+
+[33mcommit 1e4c7f3000baa8fd907e98bae4b3e26a902e986f[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Dec 13 10:40:52 2016 -0500
+
+    cost
+    
+    added cost in k. pneu
+
+[33mcommit 913c9645dfa28764257aaf5c2dee9b0cf7422f23[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Dec 12 02:11:10 2016 -0500
+
+    changes to code
+    
+    subtracting consumption
+
+[33mcommit c944736c67e8313527a726d9f1a501815b585480[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Dec 9 15:33:58 2016 -0500
+
+    discrete model
+    
+    discrete model equations
+
+[33mcommit 9b90d9a272ecab4f31c55cfc94149c6716ef7cc2[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Dec 1 12:29:19 2016 -0500
+
+    split variables
+    
+    ...
+
+[33mcommit c5b291533b062a1389681fceb32c59b0de919de7[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Dec 1 12:19:13 2016 -0500
+
+    fractional growth
+    
+    using fractional growth parameters
+
+[33mcommit 6267fddfc089545fec13a4b24144601f3cbe36fc[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Dec 1 03:27:33 2016 -0500
+
+    theta again
+    
+    I forgot to save, sorry
+
+[33mcommit 902424a49d1931c732f80a822189d8fc1fd1bbd6[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Dec 1 03:25:46 2016 -0500
+
+    theta
+    
+    sampled theta
+
+[33mcommit 0437ec68dfada5e9df9dec46559a4eeaf34edd57[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Wed Nov 16 21:10:37 2016 -0500
+
+    datasheet
+    
+    added data for a few other countries
+
+[33mcommit 20bcc366f86ed515b3b7d2c288e4b3f97bd2fde4[m
+Merge: 82254cb 56a5221
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Fri Nov 11 13:45:33 2016 -0500
+
+    Merge branch 'master' of github.com:amber-t/Carbapenem-Resistance
+
+[33mcommit 82254cbc626bc3741aa2f0ce5918b10811aeeaf7[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Fri Nov 11 13:43:58 2016 -0500
+
+    Abhishek's small changes
+
+[33mcommit 56a5221ed85bc65a8f6329910582a9a23307906f[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Nov 11 13:40:30 2016 -0500
+
+    minor changes
+    
+    a few small things
+
+[33mcommit 3ab03cc812668ef3b81e42b86d1d196fe2695202[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Nov 1 17:43:12 2016 -0400
+
+    Fitting separately to A and B data
+    
+    See KP fitted separately AT file
+
+[33mcommit 1b760a5bce33055e1a0fad39ea856cb9f28fa2dc[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Oct 27 18:05:31 2016 -0400
+
+    Add code for projection
+
+[33mcommit 7c11e77dad9a6f5f8ae4ee0d58d8ed9cbe45ec2f[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Oct 26 19:17:59 2016 -0400
+
+    Expanded the model to account for carbapenem resistance due to various pathogens. Note: it is file K.pneumoniae
+
+[33mcommit d7db1f3444a5d7ca459342b5b0f15627ed854223[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 25 17:30:06 2016 -0400
+
+    Final copy to move forward with
+
+[33mcommit 452a4a3a8f9488f1d25e00fc0d74aef5db1eece3[m
+Merge: e47045c 28fde7d
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 25 17:25:47 2016 -0400
+
+    Removed the datafile to pull new one
+
+[33mcommit e47045c1b08157264c3b016a86df05340f4f2377[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 25 17:22:39 2016 -0400
+
+    Cleaned codes
+
+[33mcommit 28fde7d600c4f7b7ee0607221d20007a04d31cab[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Oct 25 17:01:38 2016 -0400
+
+    Updates to US
+    
+    3 bacteria
+
+[33mcommit f17b51cce389ac02280a37076b0e8e4e29801b2c[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Oct 24 17:58:18 2016 -0400
+
+    new models p. 2
+    
+    new models 10/24/16
+
+[33mcommit aa2895b13a80931cb0ee957f1855cb1bf2236d76[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Oct 24 17:16:55 2016 -0400
+
+    more test models
+    
+    changes to model equations
+
+[33mcommit d64c916401329f90ebc21def1c32d667a33e192c[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Oct 24 15:34:06 2016 -0400
+
+    Scaled code
+    
+    Scaled by 100,000
+
+[33mcommit 446ac2f9d711e187e660180a0c9f3414cb65576c[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Oct 19 14:53:22 2016 -0400
+
+    Add model with consumption"
+    "
+
+[33mcommit 78b0122e25ce2f0c42c4afe64a719639ae7d797e[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Oct 19 11:48:54 2016 -0400
+
+    Pushing all small changes
+
+[33mcommit bc627b6ae54c682a9487dced39a40bde00867e9d[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Oct 14 12:53:58 2016 -0400
+
+    New datasheet
+    
+    Cross-country data from cddep
+
+[33mcommit 23a5c1648f672529438e64940c8073cf12908657[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Oct 13 18:38:42 2016 -0400
+
+    Made change to US model. The complex model implemented and fitted
+
+[33mcommit 4ab52e9e76329505cd90a0ff804f07b7648dd408[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Wed Oct 12 13:25:06 2016 -0400
+
+    Worked on United States files (comparing models)
+
+[33mcommit b2ab72fd07bb1c212dcaad477a846ade66534192[m
+Merge: a164d02 3b756cc
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 11 15:56:08 2016 -0400
+
+    Merge with Amber's copy
+    Merge branch 'master' of github.com:amber-t/Carbapenem-Resistance
+
+[33mcommit a164d02eafcaed6d7ac6214f50743b625cf662c6[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 11 15:55:35 2016 -0400
+
+    Work on matlab files
+
+[33mcommit 3b756cc9c21cf9be2c6187ee7835e8687d66f3f8[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Oct 11 15:37:13 2016 -0400
+
+    new recursion function
+    
+    4 param model
+
+[33mcommit 40df3f8f5cfaf1062fa3c404a5f0123263d1ae73[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Mon Oct 10 17:05:26 2016 -0400
+
+    Add Matlab codes
+
+[33mcommit ccbbaa877a32d20b7d283e38a06c0f20eea2a311[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Oct 10 15:16:50 2016 -0400
+
+    updated model
+    
+    4 params
+
+[33mcommit e10d087e0c0917cfa290679540242e03999d80be[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Oct 7 15:16:00 2016 -0400
+
+    deleted files
+    
+    deleted most countries
+
+[33mcommit 49906d9e309dce1c3743ca03917c096cef662883[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Oct 6 17:04:12 2016 -0400
+
+    More change
+
+[33mcommit c8563eec3d5f57443e4c525735eb7d328f1ad9a6[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Thu Oct 6 11:58:34 2016 -0400
+
+    add data
+    
+    US
+
+[33mcommit a658e61018338d60c025a3f2ccb4534fd63f6cc3[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Oct 6 11:47:26 2016 -0400
+
+    Few more changes in code
+
+[33mcommit 537223b3a0535e6a5baddb0f509577b135a0146a[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Thu Oct 6 08:52:39 2016 -0400
+
+    Add test file from AP
+
+[33mcommit c4245fca8d5e9dbf076e9532137e130d6770243f[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 4 14:33:36 2016 -0400
+
+    Modify model equations
+
+[33mcommit 6ffc0244a84e8069ee1154c281aab84b504ed0dc[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 4 14:32:23 2016 -0400
+
+    Modify model equations
+
+[33mcommit 3465cc17e5afb3aa9b256c8f23af72dc1faafc3c[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Tue Oct 4 12:01:07 2016 -0400
+
+    Fix model equations
+
+[33mcommit 92d48ca94a3d6ff27b42ac492a697b6e689a27be[m
+Author: ericfoster <your_email@youremail.com>
+Date:   Mon Oct 3 16:19:05 2016 -0400
+
+    Eric testing git
+
+[33mcommit 9a4b394142b8b451129ad0902b80acf695c4838a[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Sep 30 22:53:08 2016 -0400
+
+    most current version
+    
+    carbapenem resistant model
+
+[33mcommit 2abe77ee36267959b4e22e93e480c23708ef6f67[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Sep 30 16:37:04 2016 -0400
+
+    New Model
+    
+    new model and data
+
+[33mcommit 9e5ba3309a157345235dbd9d6fb8ea327bd674b6[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Sep 27 16:10:09 2016 -0400
+
+    new codes
+    
+    new
+
+[33mcommit 6cade644bae7ba96f2f2065e7a16113d9434d504[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Sep 27 16:09:16 2016 -0400
+
+    new codes
+    
+    model
+
+[33mcommit b04406c23ab813c11b1b565433aca6e199f91768[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Fri Sep 23 12:53:28 2016 -0400
+
+    Plots
+    
+    plots
+
+[33mcommit 31980fc253bd3c1fc4c6e7fd4551df21d1fd4214[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Tue Sep 20 16:54:08 2016 -0400
+
+    Carbapenem Resistance Models
+    
+    Preliminary models
+
+[33mcommit e09a247cb3b368ccfa295ee96ee49b195e29d4c1[m
+Merge: 9e3ee07 14dfcaa
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Sep 19 18:11:23 2016 -0400
+
+    merge
+    
+    merge
+
+[33mcommit 9e3ee076a504e7cd06a78c2100d42d8debd93f2d[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Sep 19 18:07:50 2016 -0400
+
+    committed
+    
+    code
+
+[33mcommit 14dfcaa27f8d5a564788f7e99a6c307fc4f5124a[m
+Author: Abhishek Pandey <abhiganit@gmail.com>
+Date:   Mon Sep 19 18:05:23 2016 -0400
+
+    Add DataSheet and modify code
+
+[33mcommit 6b16842a248f56bc9e826e0e665524f1f072dc5e[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Sep 19 16:53:13 2016 -0400
+
+    new model
+    
+    code
+
+[33mcommit 36060ed4306264604b1c2cff588d1f2d63e8cd02[m
+Author: amber-t <amber.tang@yale.edu>
+Date:   Mon Sep 19 16:52:19 2016 -0400
+
+    :boom::camel: Added .gitattributes & .gitignore files

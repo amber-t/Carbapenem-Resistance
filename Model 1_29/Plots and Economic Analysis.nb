@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    284421,       7399]
-NotebookOptionsPosition[    280576,       7273]
-NotebookOutlinePosition[    281021,       7290]
-CellTagsIndexPosition[    280978,       7287]
+NotebookDataLength[    310051,       8060]
+NotebookOptionsPosition[    306035,       7930]
+NotebookOutlinePosition[    306480,       7947]
+CellTagsIndexPosition[    306437,       7944]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -115,8 +115,8 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"nod", "=", "3"}], ";"}], " ", 
   RowBox[{"(*", 
-   RowBox[{"#", " ", "of", " ", "diagnoses"}], "*)"}], "\n", 
-  "\[IndentingNewLine]", 
+   RowBox[{"#", " ", "of", " ", "diagnoses"}], "*)"}], "\[IndentingNewLine]", 
+  "\n", 
   StyleBox[
    RowBox[{"(*", 
     RowBox[{"MODEL", " ", "OUTPUTS"}], "*)"}], "Code"]}], "\n", 
@@ -230,32 +230,35 @@ Cell[BoxData[
      StyleBox["=", "Code"], 
      StyleBox[" ", "Code"], 
      RowBox[{"Length", "[", "pathogens", "]"}]}], 
-    StyleBox[";", "Code"], 
-    StyleBox[" ", "Code"], 
-    StyleBox[
-     RowBox[{"(*", 
-      RowBox[{"#", " ", "of", " ", "pathogens"}], "*)"}], "Code"], 
-    "\[IndentingNewLine]", 
+    StyleBox[";", "Code"]}], 
+   StyleBox[" ", "Code"], 
+   StyleBox[
+    RowBox[{"(*", 
+     RowBox[{"#", " ", "of", " ", "pathogens"}], "*)"}], "Code"], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"cbpP", "=", 
      RowBox[{
       RowBox[{"mdataP", "[", 
        RowBox[{"[", 
         RowBox[{"-", "5"}], "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"-", "1"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
-      "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "1"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
+     "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"inappP", "=", 
      RowBox[{
       RowBox[{"mdataP", "[", 
        RowBox[{"[", 
         RowBox[{"-", "4"}], "]"}], "]"}], "[", 
-      RowBox[{"[", "1", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "1", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pathP", "=", 
      RowBox[{"Table", "[", 
       RowBox[{
@@ -277,81 +280,90 @@ Cell[BoxData[
     RowBox[{"edataP", "=", 
      RowBox[{"mdataP", "[", 
       RowBox[{"[", 
-       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{
-     "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
-      "outcomes"}], "*)"}], " ", "\[IndentingNewLine]", 
+       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{
+    "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
+     "outcomes"}], "*)"}], " ", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"stw", " ", "=", " ", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "1", "]"}], "]"}], "[", 
-      RowBox[{"[", "1", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"reduction", " ", "in", " ", "inappropriate", " ", "therapy"}], 
-     "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"[", "1", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"reduction", " ", "in", " ", "inappropriate", " ", "therapy"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRP", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "2", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSP", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "3", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mAP", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "4", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pP", "=", 
      RowBox[{"edataP", "[", 
-      RowBox[{"[", "5", "]"}], "]"}]}], ";", "  ", 
-    RowBox[{"(*", 
-     RowBox[{"prevalence", " ", "of", " ", "pneumonia"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "5", "]"}], "]"}]}], ";"}], "  ", 
+   RowBox[{"(*", 
+    RowBox[{"prevalence", " ", "of", " ", "pneumonia"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRPl", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "6", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSPl", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "7", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}],
-      "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mAPl", "=", 
      RowBox[{
       RowBox[{"edataP", "[", 
        RowBox[{"[", "8", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mdataS", 
      StyleBox["=", "Code"], 
      StyleBox[
@@ -360,10 +372,11 @@ Cell[BoxData[
         RowBox[{"{", 
          RowBox[{"\"\<Data\>\"", ",", "\"\<Sepsis_model\>\""}], "}"}]}], 
        "]"}], "Code"]}], 
-    StyleBox[";", "Code"], 
-    StyleBox[" ", "Code"], 
-    StyleBox[
-     RowBox[{"(*", "SEPSIS", "*)"}], "Code"], "\[IndentingNewLine]", 
+    StyleBox[";", "Code"]}], 
+   StyleBox[" ", "Code"], 
+   StyleBox[
+    RowBox[{"(*", "SEPSIS", "*)"}], "Code"], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mdataS", 
      StyleBox[" ", "Code"], 
      StyleBox["=", "Code"], 
@@ -381,19 +394,21 @@ Cell[BoxData[
       RowBox[{"mdataS", "[", 
        RowBox[{"[", "11", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"-", "1"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
-      "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "1"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
+     "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"inappS", "=", 
      RowBox[{
       RowBox[{"mdataS", "[", 
        RowBox[{"[", "12", "]"}], "]"}], "[", 
-      RowBox[{"[", "1", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "1", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pathS", "=", 
      RowBox[{"Table", "[", 
       RowBox[{
@@ -404,84 +419,92 @@ Cell[BoxData[
          RowBox[{"-", "1"}], "]"}], "]"}], ",", 
        RowBox[{"{", 
         RowBox[{"i", ",", "13", ",", "15"}], "}"}]}], "]"}]}], ";"}], " ", 
-   StyleBox["\n", "Code"], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
      "proportion", " ", "of", " ", "pneumonia", " ", "for", " ", "PA"}], ",", 
      " ", "AB", ",", " ", "KP"}], "*)"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+   StyleBox["\n", "Code"], 
    RowBox[{
     RowBox[{"edataS", "=", 
      RowBox[{"mdataS", "[", 
       RowBox[{"[", 
-       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{
-     "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
-      "outcomes"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{
+    "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
+     "outcomes"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRS", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "2", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSS", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "3", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mAS", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "4", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pS", "=", 
      RowBox[{"edataS", "[", 
-      RowBox[{"[", "5", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"prevalence", " ", "of", " ", "sepsis"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "5", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"prevalence", " ", "of", " ", "sepsis"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRSl", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "6", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSSl", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "7", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}],
-      "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mASl", "=", 
      RowBox[{
       RowBox[{"edataS", "[", 
        RowBox[{"[", "8", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mdataU", 
      StyleBox["=", "Code"], 
      StyleBox[
@@ -490,10 +513,11 @@ Cell[BoxData[
         RowBox[{"{", 
          RowBox[{"\"\<Data\>\"", ",", "\"\<UTI_model\>\""}], "}"}]}], "]"}], 
       "Code"]}], 
-    StyleBox[";", "Code"], 
-    StyleBox[" ", "Code"], 
-    StyleBox[
-     RowBox[{"(*", "UTI", "*)"}], "Code"], "\[IndentingNewLine]", 
+    StyleBox[";", "Code"]}], 
+   StyleBox[" ", "Code"], 
+   StyleBox[
+    RowBox[{"(*", "UTI", "*)"}], "Code"], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mdataU", 
      StyleBox[" ", "Code"], 
      StyleBox["=", "Code"], 
@@ -512,19 +536,21 @@ Cell[BoxData[
       RowBox[{"mdataU", "[", 
        RowBox[{"[", "11", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"-", "1"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
-      "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"-", "1"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "proportion", " ", "of", " ", "pneumonia", " ", "patients", " ", 
+     "prescribed", " ", "cbps"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"inappU", "=", 
      RowBox[{
       RowBox[{"mdataU", "[", 
        RowBox[{"[", "12", "]"}], "]"}], "[", 
-      RowBox[{"[", "1", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "1", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"inappropriate", " ", "cbp", " ", "prescription"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pathU", "=", 
      RowBox[{"Table", "[", 
       RowBox[{
@@ -535,101 +561,113 @@ Cell[BoxData[
          RowBox[{"-", "1"}], "]"}], "]"}], ",", 
        RowBox[{"{", 
         RowBox[{"i", ",", "13", ",", "15"}], "}"}]}], "]"}]}], ";"}], " ", 
-   "\[IndentingNewLine]", 
+   "\n", 
    RowBox[{"(*", 
     RowBox[{
      RowBox[{
      "proportion", " ", "of", " ", "pneumonia", " ", "for", " ", "PA"}], ",", 
-     " ", "AB", ",", " ", "KP"}], "*)"}], "\n", "\[IndentingNewLine]", 
+     " ", "AB", ",", " ", "KP"}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"edataU", "=", 
      RowBox[{"mdataU", "[", 
       RowBox[{"[", 
-       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{
-     "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
-      "outcomes"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"17", ";;"}], "]"}], "]"}]}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{
+    "data", " ", "for", " ", "economic", " ", "and", " ", "health", " ", 
+     "outcomes"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRU", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "2", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSU", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "3", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{
-     "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "mortality", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mAU", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "4", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"mortality", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"pU", "=", 
      RowBox[{"edataU", "[", 
-      RowBox[{"[", "5", "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"prevalence", " ", "of", " ", "UTI"}], "*)"}], 
-    "\[IndentingNewLine]", 
+      RowBox[{"[", "5", "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"prevalence", " ", "of", " ", "UTI"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mRUl", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "6", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
-     "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "resistant"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mSUl", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "7", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}],
-      "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "CBPs", " ", "of", " ", "susceptible"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mAUl", "=", 
      RowBox[{
       RowBox[{"edataU", "[", 
        RowBox[{"[", "8", "]"}], "]"}], "[", 
       RowBox[{"[", 
-       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"(*", 
-     RowBox[{"MORTALITY", ",", " ", 
-      RowBox[{"LOS", " ", "DATA", " ", 
-       RowBox[{"{", 
-        RowBox[{"pneumonia", ",", " ", "sepsis", ",", " ", "UTI"}], "}"}]}]}],
-      "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"LOS", " ", "with", " ", "alternatives"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"MORTALITY", ",", " ", 
+     RowBox[{"LOS", " ", "DATA", " ", 
+      RowBox[{"{", 
+       RowBox[{"pneumonia", ",", " ", "sepsis", ",", " ", "UTI"}], "}"}]}]}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mR", "=", 
      RowBox[{"{", 
-      RowBox[{"mRP", ",", " ", "mRS", ",", " ", "mRU"}], "}"}]}], ";", " ", 
-    RowBox[{"(*", "resistant", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mRP", ",", " ", "mRS", ",", " ", "mRU"}], "}"}]}], ";"}], " ", 
+   RowBox[{"(*", "resistant", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mS", "=", 
      RowBox[{"{", 
-      RowBox[{"mSP", ",", "mSS", ",", "mSU"}], "}"}]}], ";", " ", 
-    RowBox[{"(*", "susceptible", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mSP", ",", "mSS", ",", "mSU"}], "}"}]}], ";"}], " ", 
+   RowBox[{"(*", "susceptible", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"mA", "=", 
      RowBox[{"{", 
-      RowBox[{"mAP", ",", "mAS", ",", "mAU"}], "}"}]}], ";", " ", 
-    RowBox[{"(*", "alternatives", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mAP", ",", "mAS", ",", "mAU"}], "}"}]}], ";"}], " ", 
+   RowBox[{"(*", "alternatives", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"p", "=", 
      RowBox[{"{", 
       RowBox[{"pP", ",", "pS", ",", "pU"}], "}"}]}], ";"}], 
@@ -637,19 +675,22 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"lR", "=", 
      RowBox[{"{", 
-      RowBox[{"mRPl", ",", " ", "mRSl", ",", " ", "mRUl"}], "}"}]}], ";", 
-    RowBox[{"(*", "resistant", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mRPl", ",", " ", "mRSl", ",", " ", "mRUl"}], "}"}]}], ";"}], 
+   RowBox[{"(*", "resistant", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"lS", "=", 
      RowBox[{"{", 
-      RowBox[{"mSPl", ",", "mSSl", ",", "mSUl"}], "}"}]}], ";", 
-    RowBox[{"(*", "susceptible", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mSPl", ",", "mSSl", ",", "mSUl"}], "}"}]}], ";"}], 
+   RowBox[{"(*", "susceptible", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"lA", "=", 
      RowBox[{"{", 
-      RowBox[{"mAPl", ",", "mASl", ",", "mAUl"}], "}"}]}], ";", 
-    RowBox[{"(*", "alternatives", "*)"}], "\[IndentingNewLine]", 
-    "\[IndentingNewLine]", 
-    RowBox[{"(*", 
-     RowBox[{"UTILITY", " ", "WEIGHTS"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"mAPl", ",", "mASl", ",", "mAUl"}], "}"}]}], ";"}], 
+   RowBox[{"(*", "alternatives", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"UTILITY", " ", "WEIGHTS"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"Q", "=", 
      RowBox[{"{", 
       RowBox[{
@@ -664,10 +705,10 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"edataU", "[", 
          RowBox[{"[", "9", "]"}], "]"}], "[", 
-        RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], ";", " ", 
-    RowBox[{"(*", 
-     RowBox[{"pneu", ",", " ", "sepsis", ",", " ", "UTI"}], "*)"}], 
-    "\[IndentingNewLine]"}]}]}]], "Input",
+        RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"pneu", ",", " ", "sepsis", ",", " ", "UTI"}], "*)"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.726261595900099*^9, 3.7262620486252055`*^9}, {
    3.726262104290126*^9, 3.7262621788803053`*^9}, {3.726262217183484*^9, 
    3.726262277103978*^9}, {3.726262658783039*^9, 3.726262735464816*^9}, {
@@ -699,6 +740,620 @@ Cell[TextData[StyleBox["model fit plots & projections",
   3.726245139063218*^9, 3.7262451407125883`*^9}, {3.7262453611131535`*^9, 
   3.726245368106727*^9}}],
 
+Cell[BoxData[
+ RowBox[{Cell[TextData[StyleBox["- steady state 4.1.2018",
+   FontWeight->"Bold",
+   FontSlant->"Italic"]], "Subsubsection",
+   CellChangeTimes->{{3.726245308336602*^9, 3.726245310308673*^9}, {
+    3.7268534009780064`*^9, 3.726853401009276*^9}}], " "}]], "Input",
+ CellChangeTimes->{{3.731592788238757*^9, 3.731592805770729*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"plotD", "=", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"Null", ",", 
+      RowBox[{"{", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", "data", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"plotM", "=", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"Null", ",", 
+      RowBox[{"{", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"model", " ", "+", " ", 
+    RowBox[{"status", " ", "quo"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"plotI", "=", 
+    RowBox[{"ConstantArray", "[", 
+     RowBox[{"Null", ",", 
+      RowBox[{"{", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"intervention", "-", " ", "stewardship"}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"k", "=", "1"}], ",", " ", 
+    RowBox[{"k", "\[LessEqual]", "nop"}], ",", 
+    RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"plotD", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dataP", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dataS", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dataU", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}], ";", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"plotM", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], " ", "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataP", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataS", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataU", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"plotI", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataP", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataS", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataU", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}]}]}], "]"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{"pneumonia", ",", " ", "sepsis", ",", " ", "UTI"}], ")"}]}], 
+     ",", " ", 
+     RowBox[{"3", " ", 
+      RowBox[{"(", 
+       RowBox[{"PA", ",", " ", "AB", ",", " ", "KP"}], ")"}]}]}], "}"}], 
+   "*)"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{
+  3.726261423939189*^9, {3.7262614642883306`*^9, 3.726261464777047*^9}, {
+   3.726261561575693*^9, 3.7262615634942026`*^9}, {3.7262630032729855`*^9, 
+   3.7262630185258904`*^9}, {3.7262630609308443`*^9, 3.726263122875944*^9}, {
+   3.726263338392517*^9, 3.726263338785311*^9}, {3.7262637565778084`*^9, 
+   3.7262638547093153`*^9}, 3.7262639324261456`*^9, {3.7262639660410967`*^9, 
+   3.726264126843095*^9}, {3.726264157810708*^9, 3.7262641710699644`*^9}, {
+   3.7262642019995646`*^9, 3.726264206030634*^9}, {3.726341314954864*^9, 
+   3.7263413262757463`*^9}, {3.7263414026565456`*^9, 
+   3.7263414746721134`*^9}, {3.7263476138397007`*^9, 3.726347685006344*^9}, {
+   3.7263492681338434`*^9, 3.7263493741687374`*^9}, {3.7263494137224874`*^9, 
+   3.726349431460801*^9}, {3.7263496261020236`*^9, 3.7263496348239126`*^9}, {
+   3.7263498851753936`*^9, 3.7263498922906756`*^9}, {3.726349931777586*^9, 
+   3.7263499319615483`*^9}, {3.7263499841938734`*^9, 
+   3.7263501638486156`*^9}, {3.7263502120071387`*^9, 
+   3.7263502640132847`*^9}, {3.726350363865799*^9, 3.726350441186352*^9}, {
+   3.7263505757023783`*^9, 3.7263506325941563`*^9}, {3.7263541944456015`*^9, 
+   3.7263541989535646`*^9}, {3.7263610833715105`*^9, 
+   3.7263610987901783`*^9}, {3.7263638487961583`*^9, 
+   3.7263638524205585`*^9}, {3.726845579635956*^9, 3.726845600085219*^9}, {
+   3.72926205409566*^9, 3.729262054895122*^9}, 3.729263798118148*^9, {
+   3.729263878902293*^9, 3.7292639094004893`*^9}, {3.729264541881085*^9, 
+   3.7292645469845176`*^9}, {3.7292647518322887`*^9, 
+   3.7292647675412087`*^9}, {3.729265013472825*^9, 3.729265013845314*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"a", ",", "b", ",", "c", ",", 
+    RowBox[{"d", " ", "are", " ", "temporary", " ", "variables"}]}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Show", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"plotM", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotD", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotI", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "}"}], ",", 
+         RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", " ", 
+         RowBox[{"PlotRange", "\[Rule]", " ", "All"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", "pneumonia", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"b", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Show", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"plotM", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "2", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotD", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "2", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotI", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], "}"}], ",", 
+         RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", 
+         RowBox[{"PlotRange", "\[Rule]", " ", "All"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", "sepsis", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"c", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Show", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"plotM", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "3", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotD", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "3", "]"}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"plotI", "[", 
+             RowBox[{"[", "i", "]"}], "]"}], "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}], "}"}], ",", 
+         RowBox[{"Axes", "\[Rule]", " ", "True"}], ",", " ", 
+         RowBox[{"PlotRange", "\[Rule]", " ", "All"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", "uti", "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"d", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Panel", "[", 
+        RowBox[{
+         RowBox[{"GraphicsColumn", "[", 
+          RowBox[{"a", ",", 
+           RowBox[{"ImageSize", "\[Rule]", " ", "400"}], ",", 
+           RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"Style", "[", 
+           RowBox[{
+           "\"\<Pneumonia\>\"", ",", "\"\<Panel\>\"", ",", "17", ",", "Bold", 
+            ",", 
+            RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], "}"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{"Top", ",", "Center"}], "}"}], "}"}], ",", 
+         RowBox[{"Appearance", "\[Rule]", " ", "\"\<Frameless\>\""}], ",", 
+         RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Panel", "[", 
+        RowBox[{
+         RowBox[{"GraphicsColumn", "[", 
+          RowBox[{"b", ",", 
+           RowBox[{"ImageSize", "\[Rule]", " ", "400"}], ",", 
+           RowBox[{"AspectRatio", "\[Rule]", " ", "Automatic"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"Style", "[", 
+           RowBox[{
+           "\"\<Sepsis\>\"", ",", "\"\<Panel\>\"", ",", "17", ",", "Bold", 
+            ",", 
+            RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], "}"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{"Top", ",", "Center"}], "}"}], "}"}], ",", 
+         RowBox[{"Appearance", "\[Rule]", " ", "\"\<Frameless\>\""}], ",", 
+         RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Panel", "[", 
+        RowBox[{
+         RowBox[{"GraphicsColumn", "[", 
+          RowBox[{"c", ",", 
+           RowBox[{"ImageSize", "\[Rule]", " ", "400"}], ",", 
+           RowBox[{"AspectRatio", "\[Rule]", " ", "Automatic"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"Style", "[", 
+           RowBox[{
+           "\"\<UTI\>\"", ",", "\"\<Panel\>\"", ",", "17", ",", "Bold", ",", 
+            RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], "}"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{"Top", ",", "Center"}], "}"}], "}"}], ",", 
+         RowBox[{"Appearance", "\[Rule]", " ", "\"\<Frameless\>\""}], ",", 
+         RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}]}], "}"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+     "combine", " ", "plots", " ", "into", " ", "graphics", " ", "grid"}], 
+     ",", " ", 
+     RowBox[{"add", " ", "embellishments"}], ",", " ", 
+     RowBox[{"and", " ", 
+      RowBox[{"export", "!"}]}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lg", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PointLegend", "[", 
+        RowBox[{
+         RowBox[{"{", "Black", "}"}], ",", 
+         RowBox[{"{", "\"\<   Data\>\"", "}"}]}], "]"}], ",", " ", 
+       RowBox[{"LineLegend", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}], "}"}], ",", 
+         RowBox[{"{", "\"\<Status quo\>\"", "}"}]}], "]"}], ",", 
+       RowBox[{"LineLegend", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}], ",", 
+         RowBox[{"{", "\"\<Stewardship\>\"", "}"}]}], "]"}]}], "}"}]}], ";"}],
+    " ", 
+   RowBox[{"(*", "legend", "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"plotUN", "=", 
+     RowBox[{"Legended", "[", 
+      RowBox[{
+       RowBox[{"Panel", "[", 
+        RowBox[{
+         RowBox[{"GraphicsRow", "[", 
+          RowBox[{"d", ",", 
+           RowBox[{"AspectRatio", "\[Rule]", " ", "1.05"}], ",", 
+           RowBox[{"ImageSize", "\[Rule]", " ", "1100"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+            "\"\<Carbapenem Resistance (2000-2040)\>\"", ",", "\"\<Panel\>\"",
+              ",", "20", ",", 
+             RowBox[{"Background", "\[Rule]", "White"}]}], "]"}], ",", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"Rotate", "[", 
+              RowBox[{"\"\<Resistance frequency\>\"", ",", 
+               RowBox[{"90", " ", "Degree"}]}], "]"}], ",", "\"\<Panel\>\"", 
+             ",", "18", ",", 
+             RowBox[{"Background", "\[Rule]", "White"}]}], "]"}], ",", 
+           RowBox[{"Style", "[", 
+            RowBox[{"\"\<Year\>\"", ",", "\"\<Panel\>\"", ",", "18", ",", 
+             RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}]}], 
+          "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Top", ",", "Center"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Left", ",", "Center"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"Bottom", ",", "Center"}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Appearance", "\[Rule]", " ", "\"\<Frameless\>\""}], ",", 
+         RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}], ",", 
+       "lg"}], "]"}]}], ";"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{"plot", " ", 
+     RowBox[{"w", "/", " ", "UNcertainty"}]}], "*)"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.7263547757568827`*^9, 3.7263549628165283`*^9}, {
+   3.7263550348657293`*^9, 3.7263550349859886`*^9}, {3.726355067049554*^9, 
+   3.7263551071230354`*^9}, {3.7263551727707925`*^9, 3.72635518446199*^9}, {
+   3.726355276656437*^9, 3.7263553010421724`*^9}, {3.7263555704938946`*^9, 
+   3.726355622331549*^9}, {3.7263557178532977`*^9, 3.726355737850515*^9}, {
+   3.7263561340666914`*^9, 3.726356150704074*^9}, {3.7263562110276403`*^9, 
+   3.726356285736641*^9}, {3.7263564133749065`*^9, 3.7263566590902386`*^9}, {
+   3.726356710352039*^9, 3.7263567108870983`*^9}, {3.7263567466199403`*^9, 
+   3.726356747336229*^9}, {3.726356801229628*^9, 3.726356935576817*^9}, {
+   3.7263569705552816`*^9, 3.7263570612863035`*^9}, {3.726357205504171*^9, 
+   3.7263572071335063`*^9}, {3.726357381162506*^9, 3.7263574995303097`*^9}, {
+   3.7263575550899253`*^9, 3.7263575570815015`*^9}, {3.7263576914079413`*^9, 
+   3.7263577063355303`*^9}, {3.7263577683322086`*^9, 
+   3.7263577948460035`*^9}, {3.726357834697607*^9, 3.7263578358208675`*^9}, {
+   3.7263579136612387`*^9, 3.7263579478329086`*^9}, {3.7263580148617506`*^9, 
+   3.726358091349326*^9}, {3.726358133937852*^9, 3.726358152133312*^9}, {
+   3.7263582038211417`*^9, 3.726358204415325*^9}, {3.7263582365671463`*^9, 
+   3.7263583052212257`*^9}, {3.7263583353945885`*^9, 
+   3.7263583792192144`*^9}, {3.7263584928150787`*^9, 3.726358504344838*^9}, {
+   3.726358633729076*^9, 3.72635864061125*^9}, {3.7263586791348276`*^9, 
+   3.7263586818035865`*^9}, {3.726359148955554*^9, 3.726359194180617*^9}, {
+   3.726359279291355*^9, 3.7263592907810354`*^9}, {3.7263593887680964`*^9, 
+   3.72635938891478*^9}, {3.7263594292080727`*^9, 3.726359469619481*^9}, {
+   3.7263611047397738`*^9, 3.7263611085223703`*^9}, {3.7263633627616653`*^9, 
+   3.7263633692792873`*^9}, 3.726364934363497*^9, {3.726846414794403*^9, 
+   3.7268464444320726`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7315928066684017`*^9, 3.731592807158388*^9}}],
+
 Cell[CellGroupData[{
 
 Cell[TextData[StyleBox["+ uncertainty",
@@ -715,326 +1370,328 @@ Cell[TextData[StyleBox["- steady state",
  CellChangeTimes->{{3.726245308336602*^9, 3.726245310308673*^9}, {
   3.7268534009780064`*^9, 3.726853401009276*^9}}],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"plotD", "=", 
     RowBox[{"ConstantArray", "[", 
      RowBox[{"Null", ",", 
       RowBox[{"{", 
-       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";", " ", 
-   RowBox[{"(*", "data", "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", "data", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
    RowBox[{"plotM", "=", 
     RowBox[{"ConstantArray", "[", 
      RowBox[{"Null", ",", 
       RowBox[{"{", 
-       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";", " ", 
-   RowBox[{"(*", 
-    RowBox[{"model", " ", "+", " ", 
-     RowBox[{"status", " ", "quo"}]}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"model", " ", "+", " ", 
+    RowBox[{"status", " ", "quo"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
    RowBox[{"plotI", "=", 
     RowBox[{"ConstantArray", "[", 
      RowBox[{"Null", ",", 
       RowBox[{"{", 
-       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";", " ", 
-   RowBox[{"(*", 
-    RowBox[{"intervention", "-", " ", "stewardship"}], "*)"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{"For", "[", 
+       RowBox[{"nod", ",", "nop"}], "}"}]}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"intervention", "-", " ", "stewardship"}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"k", "=", "1"}], ",", " ", 
+    RowBox[{"k", "\[LessEqual]", "nop"}], ",", 
+    RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"k", "=", "1"}], ",", " ", 
-     RowBox[{"k", "\[LessEqual]", "nop"}], ",", 
-     RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{
-       RowBox[{"plotD", "[", 
-        RowBox[{"[", "k", "]"}], "]"}], "=", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"ListPlot", "[", 
+      RowBox[{"plotD", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
           RowBox[{
+           RowBox[{"dataP", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dataS", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dataU", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "[", 
+           RowBox[{"[", "k", "]"}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}], ";", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"plotM", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], " ", "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
            RowBox[{
-            RowBox[{"dataP", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", "k", "]"}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"{", 
-              RowBox[{"Black", ",", 
-               RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], 
-           ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
+            RowBox[{
              RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
+              RowBox[{"dataP", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
             RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListPlot", "[", 
-          RowBox[{
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
            RowBox[{
-            RowBox[{"dataS", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", "k", "]"}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"{", 
-              RowBox[{"Black", ",", 
-               RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], 
-           ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
+            RowBox[{
              RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
+              RowBox[{"dataS", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
             RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListPlot", "[", 
-          RowBox[{
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
            RowBox[{
-            RowBox[{"dataU", "[", 
-             RowBox[{"[", "1", "]"}], "]"}], "[", 
-            RowBox[{"[", "k", "]"}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"{", 
-              RowBox[{"Black", ",", 
-               RowBox[{"PointSize", "[", "Large", "]"}]}], "}"}], "}"}]}], 
-           ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}],
-         "}"}]}], ";", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"plotM", "[", 
-        RowBox[{"[", "k", "]"}], "]"}], " ", "=", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
             RowBox[{
              RowBox[{
-              RowBox[{
-               RowBox[{"dataP", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"dataU", "[", 
+               RowBox[{"[", "2", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
+          RowBox[{"AxesStyle", "->", 
+           RowBox[{"Directive", "[", "14", "]"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"plotI", "[", 
+       RowBox[{"[", "k", "]"}], "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"dataP", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
             RowBox[{"RGBColor", "[", 
-             RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
-           RowBox[{"AxesStyle", "->", 
-            RowBox[{"Directive", "[", "14", "]"}]}], ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
             RowBox[{
              RowBox[{
-              RowBox[{
-               RowBox[{"dataS", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"dataS", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
             RowBox[{"RGBColor", "[", 
-             RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
-           RowBox[{"AxesStyle", "->", 
-            RowBox[{"Directive", "[", "14", "]"}]}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"ListLinePlot", "[", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
             RowBox[{
              RowBox[{
-              RowBox[{
-               RowBox[{"dataU", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"dataU", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "[", 
+              RowBox[{"[", "k", "]"}], "]"}], "[", 
+             RowBox[{"[", "j", "]"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
             RowBox[{"RGBColor", "[", 
-             RowBox[{"0.75", ",", "0.75", ",", "0.75"}], "]"}]}], ",", 
-           RowBox[{"AxesStyle", "->", 
-            RowBox[{"Directive", "[", "14", "]"}]}], ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], " ", ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}],
-         "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"plotI", "[", 
-        RowBox[{"[", "k", "]"}], "]"}], "=", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
+             RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+          RowBox[{"PlotLabel", "\[Rule]", 
+           RowBox[{"Style", "[", 
             RowBox[{
-             RowBox[{
-              RowBox[{
-               RowBox[{"dataP", "[", 
-                RowBox[{"[", "3", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
+             RowBox[{"pathogens", "[", 
+              RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
+            "]"}]}], ",", 
+          RowBox[{"Filling", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"1", "\[Rule]", 
+             RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
+          RowBox[{"AxesOrigin", "\[Rule]", " ", 
+           RowBox[{"{", 
             RowBox[{
-             RowBox[{
-              RowBox[{
-               RowBox[{"dataS", "[", 
-                RowBox[{"[", "3", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}], 
-         ",", "\[IndentingNewLine]", 
-         RowBox[{"ListLinePlot", "[", 
-          RowBox[{
-           RowBox[{"Table", "[", 
-            RowBox[{
-             RowBox[{
-              RowBox[{
-               RowBox[{"dataU", "[", 
-                RowBox[{"[", "3", "]"}], "]"}], "[", 
-               RowBox[{"[", "k", "]"}], "]"}], "[", 
-              RowBox[{"[", "j", "]"}], "]"}], ",", 
-             RowBox[{"{", 
-              RowBox[{"j", ",", "2"}], "}"}]}], "]"}], ",", 
-           RowBox[{"PlotStyle", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"RGBColor", "[", 
-              RowBox[{"0.3", ",", "0.5", ",", "0.75"}], "]"}], "}"}]}], ",", 
-           RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
-           RowBox[{"PlotLabel", "\[Rule]", 
-            RowBox[{"Style", "[", 
-             RowBox[{
-              RowBox[{"pathogens", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", "Italic", ",", "16"}], 
-             "]"}]}], ",", 
-           RowBox[{"Filling", "\[Rule]", 
-            RowBox[{"{", 
-             RowBox[{"1", "\[Rule]", 
-              RowBox[{"{", "2", "}"}]}], "}"}]}], ",", 
-           RowBox[{"AxesOrigin", "\[Rule]", " ", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"years", "[", 
-               RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}],
-         "}"}]}]}]}], "]"}]}], "\[IndentingNewLine]", 
+             RowBox[{"years", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}]}]}], "]"}]}], 
+       "}"}]}]}]}], "]"}], "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{"{", 
     RowBox[{
@@ -1045,7 +1702,7 @@ Cell[BoxData[
      RowBox[{"3", " ", 
       RowBox[{"(", 
        RowBox[{"PA", ",", " ", "AB", ",", " ", "KP"}], ")"}]}]}], "}"}], 
-   "*)"}], "\[IndentingNewLine]"}]], "Input",
+   "*)"}]}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{
   3.726261423939189*^9, {3.7262614642883306`*^9, 3.726261464777047*^9}, {
    3.726261561575693*^9, 3.7262615634942026`*^9}, {3.7262630032729855`*^9, 
@@ -7302,101 +7959,105 @@ Cell[2127, 73, 1229, 27, 69, "Input"]
 Cell[CellGroupData[{
 Cell[3393, 105, 264, 5, 49, "Subsection"],
 Cell[3660, 112, 1874, 50, 145, "Input"],
-Cell[5537, 164, 18924, 525, 1285, "Input"]
+Cell[5537, 164, 19354, 566, 1285, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24510, 695, 257, 4, 70, "Section"],
+Cell[24940, 736, 257, 4, 70, "Section"],
+Cell[25200, 742, 343, 6, 44, "Input"],
+Cell[25546, 750, 14431, 356, 544, "Input"],
+Cell[39980, 1108, 10420, 243, 430, "Input"],
+Cell[50403, 1353, 94, 1, 30, "Input"],
 Cell[CellGroupData[{
-Cell[24792, 703, 219, 4, 49, "Subsection"],
+Cell[50522, 1358, 219, 4, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[25036, 711, 219, 4, 39, "Subsubsection"],
-Cell[25258, 717, 14702, 354, 544, "Input"],
-Cell[39963, 1073, 10420, 243, 430, "Input"]
+Cell[50766, 1366, 219, 4, 39, "Subsubsection"],
+Cell[50988, 1372, 14431, 356, 544, "Input"],
+Cell[65422, 1730, 10420, 243, 430, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[50420, 1321, 219, 4, 39, "Subsubsection"],
-Cell[50642, 1327, 6481, 153, 221, "Input"],
-Cell[57126, 1482, 9384, 235, 430, "Input"]
+Cell[75879, 1978, 219, 4, 39, "Subsubsection"],
+Cell[76101, 1984, 6481, 153, 221, "Input"],
+Cell[82585, 2139, 9384, 235, 430, "Input"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[66559, 1723, 272, 5, 49, "Subsection"],
+Cell[92018, 2380, 272, 5, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[66856, 1732, 168, 3, 39, "Subsubsection"],
-Cell[67027, 1737, 10687, 264, 411, "Input"],
-Cell[77717, 2003, 13072, 351, 392, "Input"],
-Cell[90792, 2356, 12006, 304, 506, "Input"],
-Cell[102801, 2662, 96, 1, 30, "Input"]
+Cell[92315, 2389, 168, 3, 39, "Subsubsection"],
+Cell[92486, 2394, 10687, 264, 411, "Input"],
+Cell[103176, 2660, 13072, 351, 392, "Input"],
+Cell[116251, 3013, 12006, 304, 506, "Input"],
+Cell[128260, 3319, 96, 1, 30, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[102934, 2668, 168, 3, 33, "Subsubsection"],
-Cell[103105, 2673, 6529, 155, 240, "Input"],
-Cell[109637, 2830, 10128, 268, 316, "Input"],
-Cell[119768, 3100, 13681, 324, 506, "Input"]
+Cell[128393, 3325, 168, 3, 33, "Subsubsection"],
+Cell[128564, 3330, 6529, 155, 240, "Input"],
+Cell[135096, 3487, 10128, 268, 316, "Input"],
+Cell[145227, 3757, 13681, 324, 506, "Input"]
 }, Closed]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[133510, 3431, 418, 6, 70, "Section"],
-Cell[133931, 3439, 693, 11, 106, "Text"],
-Cell[134627, 3452, 194, 3, 30, "Input"]
+Cell[158969, 4088, 418, 6, 70, "Section"],
+Cell[159390, 4096, 693, 11, 68, "Text"],
+Cell[160086, 4109, 194, 3, 30, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134858, 3460, 344, 5, 70, "Section"],
-Cell[135205, 3467, 225, 3, 49, "Text"],
+Cell[160317, 4117, 344, 5, 70, "Section"],
+Cell[160664, 4124, 225, 3, 30, "Text"],
 Cell[CellGroupData[{
-Cell[135455, 3474, 268, 5, 49, "Subsection"],
+Cell[160914, 4131, 268, 5, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[135748, 3483, 266, 5, 39, "Subsubsection"],
-Cell[136017, 3490, 13231, 357, 867, "Input"]
+Cell[161207, 4140, 266, 5, 39, "Subsubsection"],
+Cell[161476, 4147, 13231, 357, 563, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[149285, 3852, 372, 6, 39, "Subsubsection"],
-Cell[149660, 3860, 11947, 328, 449, "Input"]
+Cell[174744, 4509, 372, 6, 39, "Subsubsection"],
+Cell[175119, 4517, 11947, 328, 449, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[161656, 4194, 262, 5, 49, "Subsection"],
+Cell[187115, 4851, 262, 5, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[161943, 4203, 217, 4, 39, "Subsubsection"],
-Cell[162163, 4209, 7061, 178, 221, "Input"]
+Cell[187402, 4860, 217, 4, 39, "Subsubsection"],
+Cell[187622, 4866, 7061, 178, 221, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[169261, 4392, 321, 5, 39, "Subsubsection"],
-Cell[169585, 4399, 8186, 214, 259, "Input"]
+Cell[194720, 5049, 321, 5, 39, "Subsubsection"],
+Cell[195044, 5056, 8186, 214, 259, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[177820, 4619, 264, 5, 49, "Subsection"],
+Cell[203279, 5276, 264, 5, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[178109, 4628, 266, 5, 39, "Subsubsection"],
-Cell[178378, 4635, 4628, 124, 274, "Input"]
+Cell[203568, 5285, 266, 5, 39, "Subsubsection"],
+Cell[203837, 5292, 4628, 124, 274, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[183043, 4764, 316, 5, 39, "Subsubsection"],
-Cell[183362, 4771, 5692, 156, 291, "Input"]
+Cell[208502, 5421, 316, 5, 39, "Subsubsection"],
+Cell[208821, 5428, 5692, 156, 291, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[189103, 4933, 312, 5, 49, "Subsection"],
+Cell[214562, 5590, 312, 5, 49, "Subsection"],
 Cell[CellGroupData[{
-Cell[189440, 4942, 390, 6, 39, "Subsubsection"],
-Cell[189833, 4950, 5324, 143, 202, "Input"],
-Cell[195160, 5095, 14342, 359, 639, "Input"],
-Cell[209505, 5456, 9672, 245, 506, "Input"]
+Cell[214899, 5599, 390, 6, 39, "Subsubsection"],
+Cell[215292, 5607, 5324, 143, 202, "Input"],
+Cell[220619, 5752, 14342, 359, 639, "Input"],
+Cell[234964, 6113, 9672, 245, 506, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[219214, 5706, 363, 6, 39, "Subsubsection"],
-Cell[219580, 5714, 5501, 145, 202, "Input"],
-Cell[225084, 5861, 14404, 360, 639, "Input"],
-Cell[239491, 6223, 9819, 247, 506, "Input"]
+Cell[244673, 6363, 363, 6, 39, "Subsubsection"],
+Cell[245039, 6371, 5501, 145, 202, "Input"],
+Cell[250543, 6518, 14404, 360, 639, "Input"],
+Cell[264950, 6880, 9819, 247, 506, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[249347, 6475, 414, 7, 39, "Subsubsection"],
-Cell[249764, 6484, 6527, 171, 202, "Input"],
-Cell[256294, 6657, 14382, 360, 639, "Input"],
-Cell[270679, 7019, 9845, 248, 487, "Input"]
+Cell[274806, 7132, 414, 7, 39, "Subsubsection"],
+Cell[275223, 7141, 6527, 171, 202, "Input"],
+Cell[281753, 7314, 14382, 360, 639, "Input"],
+Cell[296138, 7676, 9845, 248, 487, "Input"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
